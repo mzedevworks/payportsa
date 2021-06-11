@@ -1,0 +1,3 @@
+Mandate ID,Name,Surname,Email,Cellphone,Id Number,Address Line 1,Address Line 2,Suburb,City,Province,Bank Name,Acc Type,Branch Code,Account Holder Name,Acc Number,Once off amount,Collection date,Recurring amount,Reoccuring Start date,Debit Frequency,Duration(in months)
+1046,Chereen,Muller,chereenmuller@mailinator.com,1234567892,1234567891234,,,,,,Capitec,saving,470010,Chereen Muller,1126080630,5,05/03/2020,100,09/04/2020,,
+1048,Payport,sas,payportsas@mailinator.com,1234567894,1234567891234,,,,,,ABSA,saving,632005,Payport,4158597732,3,05/03/2020,100,24/04/2020,Monthly,10

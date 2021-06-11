@@ -1,0 +1,6 @@
+000L2020122100000PAYPORT CONSULTING PTY LTD    000000006431                                                                                                                                           
+900L000 TRANSMISSION 06431-0000015 REJECTED                                                                                                                                                           
+900L020 ACB USER SET C635-0000014-000000 REJECTED                                                                                                                                                     
+901L020 C635/0000014/000000 00006-*** USER GEN NUMBER NOT NEXT IN SEQUENCE ***                                                                                                                        
+901L000 00014-*** NO TRANSMISSION CONTENTS WERE ACCEPTED ***                                                                                                                                          
+999L000000006                                                                                                                                                                                         

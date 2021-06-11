@@ -1,0 +1,18 @@
+000L2020102000000PAYPORT CONSULTING PTY LTD    000000007303                                                                                                                                           
+900L000 TRANSMISSION 07303-0000019 REJECTED                                                                                                                                                           
+901T001 00076-*** CHARACTERS IN INPUT FILE NOT ASCII ***                                                                                                                                              
+901T001 00002-*** UNEXPECTED END OF INPUT ***                                                                                                                                                         
+901T001 00002-*** UNEXPECTED END OF INPUT ***                                                                                                                                                         
+900L001 ACB USER SET D237-0000023-000000 REJECTED                                                                                                                                                     
+901L001 D237/0000023/000013 00035-*** WARNING ONLY *** ACCOUNT TYPE INVALID ***                                                                                                                       
+901L001 D237/0000023/000017 00035-*** WARNING ONLY *** ACCOUNT TYPE INVALID ***                                                                                                                       
+901L001 D237/0000023/000032 00034-*** WARNING ONLY *** HOMING ACCOUNT INVALID ***                                                                                                                     
+901L001 D237/0000023/000063 00034-*** WARNING ONLY *** HOMING ACCOUNT INVALID ***                                                                                                                     
+901L001 D237/0000023/000076 00034-*** WARNING ONLY *** HOMING ACCOUNT INVALID ***                                                                                                                     
+901L001 D237/0000023/000092 00035-*** WARNING ONLY *** ACCOUNT TYPE INVALID ***                                                                                                                       
+901L001 D237/0000023/000160 00034-*** WARNING ONLY *** HOMING ACCOUNT INVALID ***                                                                                                                     
+901L001 D237/0000023/000232 00035-*** WARNING ONLY *** ACCOUNT TYPE INVALID ***                                                                                                                       
+901L001 D237/0000023/000000 00018-*** TRAILER HASH TOTAL 841173784340 IS INCORRECT ***                                                                                                                
+901L000 00002-*** UNEXPECTED END OF INPUT ***                                                                                                                                                         
+901L000 00014-*** NO TRANSMISSION CONTENTS WERE ACCEPTED ***                                                                                                                                          
+999L000000018                                                                                                                                                                                         

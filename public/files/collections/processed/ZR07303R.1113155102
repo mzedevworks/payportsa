@@ -1,0 +1,43 @@
+000L2020111300000PAYPORT CONSULTING PTY LTD    000000007303                                                                                                                                           
+900L000 TRANSMISSION 07303-0000026 REJECTED                                                                                                                                                           
+900L001 ACB USER SET D237-0000030-000000 REJECTED                                                                                                                                                     
+901L001 D237/0000030/000001 00025-*** NOMINATED ACCOUNT 04094544892 NOT REGISTERED ***                                                                                                                
+901L001 D237/0000030/000001 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000030/000001 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000030/000001 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000030/000002 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000030/000002 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000030/000002 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000030/000003 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000030/000003 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000030/000003 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000030/000004 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000030/000004 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000030/000004 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000030/000005 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000030/000005 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000030/000005 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000030/000006 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000030/000006 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000030/000006 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000030/000007 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000030/000007 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000030/000007 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000030/000008 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000030/000008 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000030/000008 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000030/000009 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000030/000009 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000030/000009 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000030/000010 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000030/000010 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000030/000010 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000030/000011 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000030/000011 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000030/000011 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000030/000012 00045-*** CONTRA USER BRANCH ERROR ***                                                                                                                                    
+901L001 D237/0000030/000012 00046-*** CONTRA NOM. ACCOUNT ERROR ***                                                                                                                                   
+901L001 D237/0000030/000012 00050-*** CONTRA HOM. BRANCH ERROR ***                                                                                                                                    
+901L001 D237/0000030/000012 00058-*** CONTRA REFERENCE SHORT NAME INVALID ***                                                                                                                         
+901L000 00014-*** NO TRANSMISSION CONTENTS WERE ACCEPTED ***                                                                                                                                          
+999L000000043                                                                                                                                                                                         

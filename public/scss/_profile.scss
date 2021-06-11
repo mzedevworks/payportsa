@@ -1,0 +1,116 @@
+//profile 
+.profile-bg{
+  background: #fff;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  .user-profile{
+    .profile-body{
+      padding: 0 30px;
+      text-align: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      .profile-user-avatar{
+        margin-top: -5.71429em;
+        img{
+          border-radius: 100px;
+          border: 2px solid #fff;
+          -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+        }
+      }
+      .profile-user-name{
+        font-size: 22px;
+        margin-top: 10px;
+      }
+      .profile-user-address{
+        color: #888;
+      }
+      .profile-user-description{
+        margin-top: 20px;
+      }
+    }
+  }
+}
+.forms-profile{
+  padding: 10px 15px;
+}
+// Timeline
+.timeline-view{
+  .box-title{
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+}
+.timeline-entry{
+  .card{
+    margin-left: 60px!important;
+    margin-right: 0;
+    margin-bottom: 10px;
+    .card-body{
+      background-color: #f4f8fb;
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+      padding: 1.25rem;
+    }
+  }
+}
+.timeline-view #activity .timeline li{
+    position: relative;
+    display: block;
+    min-height: 30px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.timeline-view #activity .timeline:before{
+  top: 44px;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  background-color: #f1f6fa;
+  left: 35px;
+  width: 2px;
+  margin-left: -1px;
+}
+.timeline-view #activity .timeline li .timeline-circle{
+  position: absolute;
+  line-height: 38px;
+  background: #f4f8fb;
+  top: 24px;
+  width: 40px;
+  height: 40px;
+  margin-left: 0;
+  font-size: 18px;
+  i{
+    vertical-align: middle;
+  }
+}
+.timeline-view #activity .timeline li .timeline-entry .card img.rounded-circle{
+  width: 40px;
+  left: 10px;
+  margin-right: 10px;
+}
+.timeline-view #activity .timeline li .timeline-entry .card .card-body.timeline-entry-content:before{
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: -14px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 14px 14px 14px 0;
+    border-color: transparent #f4f8fb transparent transparent;
+}

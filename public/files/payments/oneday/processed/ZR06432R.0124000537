@@ -1,0 +1,9 @@
+000L2021012300000PAYPORT CONSULTING PTY LTD    000000006432                                                                                                                                           
+900L000 TRANSMISSION 06432-0000001 REJECTED                                                                                                                                                           
+901L000 00006-*** TRANS. NUMBER NOT NEXT IN SEQUENCE ***                                                                                                                                              
+900L020 ACB USER SET C637-0000001-000000 REJECTED                                                                                                                                                     
+901L020 C637/0000001/000000 00006-*** USER GEN NUMBER NOT NEXT IN SEQUENCE ***                                                                                                                        
+901L020 C637/0000001/000000 00004-*** INVALID FIRST ACTION DATE ***                                                                                                                                   
+901L020 C637/0000001/000003 00004-*** 1ST ACTION DATE < 1ST POSSIBLE ***                                                                                                                              
+901L000 00014-*** NO TRANSMISSION CONTENTS WERE ACCEPTED ***                                                                                                                                          
+999L000000009                                                                                                                                                                                         

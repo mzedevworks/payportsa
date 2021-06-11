@@ -1,0 +1,23 @@
+//Footer 
+.content-footer {
+  padding: 0px 30px;
+  .footer {
+    padding: 20px 0;
+    font-size: 14px;
+    border-top: 1px solid #e9eaec;
+    .go-right {
+      float: right;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .content-footer .footer {
+    text-align: center;
+  }
+  .content-footer .footer .go-right {
+    float: none;
+    margin-top: 15px;
+    display: block;
+  }
+}

@@ -1,0 +1,13 @@
+000L2021053100000PAYPORT CONSULTING PTY LTD    000000007303                                                                                                                                           
+900L000 TRANSMISSION 07303-0000115 REJECTED                                                                                                                                                           
+900L001 ACB USER SET D237-0000121-000000 REJECTED                                                                                                                                                     
+901L001 D237/0000121/000043 00035-*** WARNING ONLY *** ACCOUNT TYPE INVALID ***                                                                                                                       
+901L001 D237/0000121/000051 00035-*** WARNING ONLY *** ACCOUNT TYPE INVALID ***                                                                                                                       
+901L001 D237/0000121/000065 00080-*** WARNING ONLY - ACCOUNT TYPE CHANGE - 2 TO 1 ***                                                                                                                 
+901L001 D237/0000121/000090 00080-*** WARNING ONLY - ACCOUNT TYPE CHANGE - 1 TO 2 ***                                                                                                                 
+901L001 D237/0000121/000199 00034-*** WARNING ONLY *** HOMING ACCOUNT INVALID ***                                                                                                                     
+901L001 D237/0000121/000252 00034-*** WARNING ONLY *** HOMING ACCOUNT INVALID ***                                                                                                                     
+901L001 D237/0000121/000000 00014-*** TRAILER DR VALUE 0000141047.12 NOT = CALCULATED DR VALUE 0000141047.11 ***                                                                                      
+901L001 D237/0000121/000000 00015-*** TRAILER CR VALUE 0000141047.12 NOT = CALCULATED CR VALUE 0000141047.11 ***                                                                                      
+901L000 00014-*** NO TRANSMISSION CONTENTS WERE ACCEPTED ***                                                                                                                                          
+999L000000013                                                                                                                                                                                         

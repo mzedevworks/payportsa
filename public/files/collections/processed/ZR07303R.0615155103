@@ -1,0 +1,6 @@
+000L2020061500000PAYPORT CONSULTING PTY LTD    000000007303                                                                                                                                           
+900L000 TRANSMISSION 07303-0000013 REJECTED                                                                                                                                                           
+900L001 ACB USER SET D237-0000017-000000 REJECTED                                                                                                                                                     
+901L001 D237/0000017/000000 00072-*** USER SET 0001 REJECTED - TRANSACTION ACTION DATE AFTER LIMIT EXPIRY DATE ***                                                                                    
+901L000 00014-*** NO TRANSMISSION CONTENTS WERE ACCEPTED ***                                                                                                                                          
+999L000000006                                                                                                                                                                                         

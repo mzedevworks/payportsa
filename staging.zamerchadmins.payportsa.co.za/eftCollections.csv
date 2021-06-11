@@ -1,0 +1,4 @@
+Reference,Mandate ID,Name,Surname,Email,Cellphone,Bank Name,Acc Type,Branch Code,Account Holder Name,Acc Number,Once off amount,Collection date,Collection end date,sms Notification,email Notification,Entry Class
+109bray,3234667878,one,two,1rakesh@mailinator.com,8292733000,ABSA,Cheque,632005,1Johannes Bray,4081293331,100,03/31/2020,12/25/2020,N,N,Insurance Premiums
+256bray,320035678678,three,four,2rakesh@mailinator.com,8292733001,ABSA,Cheque,632006,2Johannes Bray,4081293332,150,10/05/2020,12/25/2020,N,N,fff
+256bray,320035678678,three,four,rakesh235@mailinator.com,8292733001,ABSA,Chjjeque,632006,2Johannes Bray,4081293332,150,10/05/2020,12/25/2020,N,N,fff

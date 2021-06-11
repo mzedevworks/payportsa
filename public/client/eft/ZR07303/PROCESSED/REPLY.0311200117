@@ -1,0 +1,18 @@
+000T2020031100000PAYPORT CONSULTING PTY LTD    000000007303                                                                                                                                           
+900T000 TRANSMISSION 07303-0000001 REJECTED                                                                                                                                                           
+901T001 00008-*** TRANS. RECORD-ID INVALID (NOT NUMERIC) ***                                                                                                                                          
+901T001 00002-*** UNEXPECTED END OF INPUT ***                                                                                                                                                         
+901T001 00002-*** UNEXPECTED END OF INPUT ***                                                                                                                                                         
+901T001 00002-*** UNEXPECTED END OF INPUT ***                                                                                                                                                         
+901T000 00006-*** TRANS. NUMBER NOT "TEST" - CHECK BYPASSED ***                                                                                                                                       
+900T001 ACB USER SET D237-0000001-000000 REJECTED                                                                                                                                                     
+901T001 D237/0000001/000001 00025-*** NOMINATED ACCOUNT 04094544892 NOT REGISTERED ***                                                                                                                
+901T001 D237/0000001/000001 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901T001 D237/0000001/000001 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901T001 D237/0000001/000001 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901T001 D237/0000001/000001 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901T001 D237/0000001/000001 00032-*** WARNING ONLY *** HOMING BRANCH INVALID ***                                                                                                                      
+901T001 D237/0000001/000001 00041-*** HOMING INSTITUTION NOT=21 ***                                                                                                                                   
+901T000 00002-*** UNEXPECTED END OF INPUT ***                                                                                                                                                         
+901T000 00014-*** NO TRANSMISSION CONTENTS WERE ACCEPTED ***                                                                                                                                          
+999T000000018                                                                                                                                                                                         

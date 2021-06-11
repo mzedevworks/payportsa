@@ -1,0 +1,14 @@
+000L2020082100000PAYPORT CONSULTING PTY LTD    000000006431                                                                                                                                           
+900L000 TRANSMISSION 06431-0000012 REJECTED                                                                                                                                                           
+900L020 ACB USER SET C635-0000012-000000 REJECTED                                                                                                                                                     
+901L020 C635/0000012/000001 00025-*** NOMINATED ACCOUNT 04047088192 NOT REGISTERED ***                                                                                                                
+901L020 C635/0000012/000001 00070-*** WARNING : TRANSACTION AMOUNT EXCEEDS CREDIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                             
+901L020 C635/0000012/000001 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L020 C635/0000012/000001 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L020 C635/0000012/000001 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L020 C635/0000012/000001 00034-*** WARNING ONLY *** HOMING ACCOUNT INVALID ***                                                                                                                     
+901L020 C635/0000012/000002 00045-*** CONTRA USER BRANCH ERROR ***                                                                                                                                    
+901L020 C635/0000012/000002 00046-*** CONTRA NOM. ACCOUNT ERROR ***                                                                                                                                   
+901L020 C635/0000012/000002 00050-*** CONTRA HOM. BRANCH ERROR ***                                                                                                                                    
+901L000 00014-*** NO TRANSMISSION CONTENTS WERE ACCEPTED ***                                                                                                                                          
+999L000000014                                                                                                                                                                                         

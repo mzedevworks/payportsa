@@ -1,0 +1,34 @@
+Mandate ID,Name,Surname,Email,Cellphone,Id Number,Address Line 1,Address Line 2,Suburb,City,Province,Reference,Service Type,Debit Frequency,Bank Name,Acc Type,Branch Code,Account Holder Name,Acc Number,Once off amount,Recurring amount,Collection date,Collection end date
+3234,one,two,1rakesh@mailinator.com,8292733000,7.89E+12,1 Away,,Bellville,Cape Town,Western Cape,1bray,Same day,Monthly,ABSA,Chequfghfghe,632005,1Johannes Bray,4081293331,100,300,02/25/2020,02/02/2020
+3235,three,four,2rakesh@mailinator.com,8292733001,7.89E+12,2 Away,,Bellville,Cape Town,Western Cape,2bray,Same day,Monthly,ABSA,Cheque,632006,2Johannes Bray,4081293332,150,450,02/25/2020,12/25/2020
+3236,five,six,3rakesh@mailinator.com,8292733002,7.89E+12,3 Away,,Bellville,Cape Town,Western Cape,3bray,Same day,Monthly,ABSA,Cheque,632007,3Johannes Bray,4081293333,200,600,02/25/2020,12/25/2020
+3237,seven,eight,4rakesh@mailinator.com,8292733003,7.89E+12,4 Away,,Bellville,Cape Town,Western Cape,4bray,Same day,Monthly,ABSA,Cheque,632008,4Johannes Bray,4081293334,100,300,02/25/2020,12/25/2020
+3238,nine,ten,5rakesh@mailinator.com,8292733004,7.89E+12,5 Away,,Bellville,Cape Town,Western Cape,5bray,Same day,Monthly,ABSA,Cheque,632009,5Johannes Bray,4081293335,75,250,02/25/2020,12/25/2020
+3239,eleven,two,6rakesh@mailinator.com,8292733005,7.89E+12,6 Away,,Bellville,Cape Town,Western Cape,6bray,Same day,Monthly,ABSA,Cheque,632010,6Johannes Bray,4081293336,,300,,12/25/2020
+3240,thirteen,four,7rakesh@mailinator.com,8292733006,7.89E+12,7 Away,,Bellville,Cape Town,Western Cape,7bray,Same day,Monthly,ABSA,Cheque,632011,7Johannes Bray,4081293337,,900,,12/25/2020
+3241,fifteen,six,8rakesh@mailinator.com,8292733007,7.89E+12,8 Away,,Bellville,Cape Town,Western Cape,8bray,Same day,Monthly,ABSA,Cheque,632012,8Johannes Bray,4081293338,100,,02/25/2020,
+3242,seventeen,eight,9rakesh@mailinator.com,8292733008,7.89E+12,9 Away,,Bellville,Cape Town,Western Cape,9bray,Same day,Monthly,ABSA,Cheque,632013,9Johannes Bray,4081293339,,800,,12/25/2020
+3243,nineteen,ten,10rakesh@mailinator.com,8292733009,7.89E+12,10 Away,,Bellville,Cape Town,Western Cape,10bray,Same day,Monthly,ABSA,Cheque,632014,10Johannes Bray,4081293340,,1500,,12/25/2020
+3244,twentyone,twentytwo,11rakesh@mailinator.com,8292733010,7.89E+12,11 Away,,Bellville,Cape Town,Western Cape,11bray,Same day,Monthly,ABSA,Cheque,632015,11Johannes Bray,4081293341,,1254,,12/25/2020
+3245,twentythree,twentyfour,12rakesh@mailinator.com,8292733011,7.89E+12,12 Away,,Bellville,Cape Town,Western Cape,12bray,Same day,Monthly,Afbbbbrican Bank,Cheque,632016,12Johannes Bray,4081293342,150,,02/25/2020,
+3246,twentyfive,twentysix,13rakesh@mailinator.com,8292733012,7.89E+12,13 Away,,Bellville,Cape Town,Western Cape,13bray,Same day,Weekly,African Bank,Cheque,632017,13Johannes Bray,4081293343,,4500,,12/25/2020
+3247,twentyseven,twentyeight,14rakesh@mailinator.com,8292733013,7.89E+12,14 Away,,Bellville,Cape Town,Western Cape,14bray,Same day,Weekly,African Bank,Cheque,632018,14Johannes Bray,4081293344,,2500,,12/25/2020
+3248,twentynine,twentyten,15rakesh@mailinator.com,8292733014,7.89E+12,15 Away,,Bellville,Cape Town,Western Cape,15bray,Same day,Weekly,African Bank,Saving,632019,15Johannes Bray,4081293345,,3600,,12/25/2020
+3249,thirtyone,thirtytwo,16rakesh@mailinator.com,8292733015,7.89E+12,16 Away,,Bellville,Cape Town,Western Cape,16bray,Same day,Weekly,Bidvest,Saving,632020,16Johannes Bray,4081293346,,7800,,12/25/2020
+3250,thirtythree,thirtyfour,17rakesh@mailinator.com,8292733016,7.89E+12,17 Away,,Bellville,Cape Town,Western Cape,17bray,Same day,Weekly,Bidvest,Saving,632021,17Johannes Bray,4081293347,,787,,12/25/2020
+3251,thirtyfive,thirtysix,18rakesh@mailinator.com,8292733017,7.89E+12,18 Away,,Bellville,Cape Town,Western Cape,18bray,Same day,Weekly,Bidvest,Saving,632022,18Johannes Bray,4081293348,,5665,,12/25/2020
+3252,thirtyseven,thirtyeight,19rakesh@mailinator.com,8292733018,7.89E+12,19 Away,,Bellville,Cape Town,Western Cape,19bray,Same day,Weekly,Bidvest,Saving,632023,19Johannes Bray,4081293349,,563,,12/25/2020
+3253,thirtynine,thirtyten,20rakesh@mailinator.com,8292733019,7.89E+12,20 Away,,Bellville,Cape Town,Western Cape,20bray,Same day,Weekly,Bidvest,Saving,632024,20Johannes Bray,4081293350,500,,02/25/2020,
+3254,fourtyone,fourtytwo,21rakesh@mailinator.com,8292733020,7.89E+12,21 Away,,Bellville,Cape Town,Western Cape,21bray,Same day,Weekly,Bidvest,Saving,632025,21Johannes Bray,4081293351,,526,,12/25/2020
+3255,fourtythree,fourtyfour,22rakesh@mailinator.com,8292733021,7.89E+12,22 Away,,Bellville,Cape Town,Western Cape,22bray,Same day,Weekly,Capitec,Saving,632026,22Johannes Bray,4081293352,,5632,,12/25/2020
+3256,fourtyfive,fourtysix,23rakesh@mailinator.com,8292733022,7.89E+12,23 Away,,Bellville,Cape Town,Western Cape,23bray,Same day,Weekly,Capitec,Saving,632027,23Johannes Bray,4081293353,,561,,12/25/2020
+3257,fourtyseven,fourtyeight,24rakesh@mailinator.com,8292733023,7.89E+12,24 Away,,Bellville,Cape Town,Western Cape,24bray,Same day,Annually,Capitec,Saving,632028,24Johannes Bray,4081293354,,561,,12/25/2020
+3258,fourtynine,fourty,25rakesh@mailinator.com,8292733024,7.89E+12,25 Away,,Bellville,Cape Town,Western Cape,25bray,Same day,Annually,Capitec,Saving,632029,25Johannes Bray,4081293355,,6134,,12/25/2020
+3259,fiftyone,fiftytwo,26rakesh@mailinator.com,8292733025,7.89E+12,26 Away,,Bellville,Cape Town,Western Cape,26bray,Same day,Annually,Capitec,Saving,632030,26Johannes Bray,4081293356,2000,,02/25/2020,
+3260,fiftythree,fiftyfour,27rakesh@mailinator.com,8292733026,7.89E+12,27 Away,,Bellville,Cape Town,Western Cape,27bray,Same day,Annually,Capitec,Saving,632031,27Johannes Bray,4081293357,,413,,12/25/2020
+3261,fiftyfive,fiftysix,28rakesh@mailinator.com,8292733027,7.89E+12,28 Away,,Bellville,Cape Town,Western Cape,28bray,Same day,Annually,Std Bank,Saving,632032,28Johannes Bray,4081293358,,5464,,12/25/2020
+3262,fiftyseven,fiftyeight,29rakesh@mailinator.com,8292733028,7.89E+12,29 Away,,Bellville,Cape Town,Western Cape,29bray,Same day,Annually,Std Bank,Saving,632033,29Johannes Bray,4081293359,50,454,03/25/2020,12/25/2020
+3263,fiftynine,fiftyten,30rakesh@mailinator.com,8292733029,7.89E+12,30 Away,,Bellville,Cape Town,Western Cape,30bray,Same day,Annually,Std Bank,Saving,632034,30Johannes Bray,4081293360,70,712,02/26/2020,12/25/2020
+3264,sixtyone,sixtytwo,31rakesh@mailinator.com,8292733030,7.89E+12,31 Away,,Bellville,Cape Town,Western Cape,31bray,Same day,Bi-annualy,Std Bank,Saving,632035,31Johannes Bray,4081293361,90,531,02/20/2020,12/25/2020
+3265,sixtythree,sixtyfour,32rakesh@mailinator.com,8292733031,7.89E+12,32 Away,,Bellville,Cape Town,Western Cape,32bray,Same day,Bi-annualy,Std Bank,Saving,632036,32Johannes Bray,4081293362,150,523,02/21/2020,12/25/2020
+3266,sixtyfive,sixtysix,33rakesh@mailinator.com,8292733032,7.89E+12,33 Away,,Bellville,Cape Town,Western Cape,33bray,Same day,Bi-annualy,Std Bank,Saving,632037,33Johannes Bray,4081293363,300,533,02/24/2020,12/25/2020

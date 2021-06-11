@@ -1,0 +1,35 @@
+000L2020121400000PAYPORT CONSULTING PTY LTD    000000007303                                                                                                                                           
+900L000 TRANSMISSION 07303-0000036 REJECTED                                                                                                                                                           
+901T001 00076-*** CHARACTERS IN INPUT FILE NOT ASCII ***                                                                                                                                              
+901T001 00002-*** UNEXPECTED END OF INPUT ***                                                                                                                                                         
+901T001 00002-*** UNEXPECTED END OF INPUT ***                                                                                                                                                         
+901T001 00002-*** UNEXPECTED END OF INPUT ***                                                                                                                                                         
+900L001 ACB USER SET D237-0000040-000000 REJECTED                                                                                                                                                     
+901L001 D237/0000040/000005 00080-*** WARNING ONLY - ACCOUNT TYPE CHANGE - 2 TO 1 ***                                                                                                                 
+901L001 D237/0000040/000025 00080-*** WARNING ONLY - ACCOUNT TYPE CHANGE - 2 TO 1 ***                                                                                                                 
+901L001 D237/0000040/000095 00080-*** WARNING ONLY - ACCOUNT TYPE CHANGE - 2 TO 1 ***                                                                                                                 
+901L001 D237/0000040/000137 00034-*** WARNING ONLY *** HOMING ACCOUNT INVALID ***                                                                                                                     
+901L001 D237/0000040/000167 00080-*** WARNING ONLY - ACCOUNT TYPE CHANGE - 2 TO 1 ***                                                                                                                 
+901L001 D237/0000040/000188 00080-*** WARNING ONLY - ACCOUNT TYPE CHANGE - 1 TO 2 ***                                                                                                                 
+901L001 D237/0000040/000256 00064-*** WARNING : TRANSACTION AMOUNT = ZERO, TRANSACTION WILL UNPAY. ***                                                                                                
+901L001 D237/0000040/000343 00035-*** WARNING ONLY *** ACCOUNT TYPE INVALID ***                                                                                                                       
+901L001 D237/0000040/000346 00064-*** WARNING : TRANSACTION AMOUNT = ZERO, TRANSACTION WILL UNPAY. ***                                                                                                
+901L001 D237/0000040/000390 00035-*** WARNING ONLY *** ACCOUNT TYPE INVALID ***                                                                                                                       
+901L001 D237/0000040/000464 00035-*** WARNING ONLY *** ACCOUNT TYPE INVALID ***                                                                                                                       
+901L001 D237/0000040/000558 00064-*** WARNING : TRANSACTION AMOUNT = ZERO, TRANSACTION WILL UNPAY. ***                                                                                                
+901L001 D237/0000040/000582 00035-*** WARNING ONLY *** ACCOUNT TYPE INVALID ***                                                                                                                       
+901L001 D237/0000040/000587 00035-*** WARNING ONLY *** ACCOUNT TYPE INVALID ***                                                                                                                       
+901L001 D237/0000040/000646 00035-*** WARNING ONLY *** ACCOUNT TYPE INVALID ***                                                                                                                       
+901L001 D237/0000040/000760 00037-*** ACTION DATE INVALID ***                                                                                                                                         
+901L001 D237/0000040/000760 00021-*** ENTRY CLASS NOT = DEBIT ENTRY CLASS ***                                                                                                                         
+901L001 D237/0000040/000760 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000040/000760 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000040/000760 00035-*** ACCOUNT TYPE INVALID ***                                                                                                                                        
+901L001 D237/0000040/000760 00035-*** WARNING ONLY *** ACCOUNT TYPE INVALID ***                                                                                                                       
+901L001 D237/0000040/000760 00038-*** ACTION DATE CHANGED BEFORE CONTRA ***                                                                                                                           
+901L001 D237/0000040/000760 00038-*** ACTION DATE CHANGED BEFORE CONTRA ***                                                                                                                           
+901L001 D237/0000040/000760 00042-*** HOMING INS. NOT NUMERIC ***                                                                                                                                     
+901L001 D237/0000040/000760 00067-*** WARNING : DEBIT AMOUNT EXCEEDS THE PCH LIMIT - THE TRANSACTION WILL UNPAY ***                                                                                   
+901L000 00002-*** UNEXPECTED END OF INPUT ***                                                                                                                                                         
+901L000 00014-*** NO TRANSMISSION CONTENTS WERE ACCEPTED ***                                                                                                                                          
+999L000000035                                                                                                                                                                                         

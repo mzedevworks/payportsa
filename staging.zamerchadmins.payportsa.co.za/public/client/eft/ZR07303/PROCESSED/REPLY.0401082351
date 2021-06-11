@@ -1,0 +1,7 @@
+000L2020040100000PAYPORT CONSULTING PTY LTD    000000007303                                                                                                                                           
+900L000 TRANSMISSION 07303-0000001 REJECTED                                                                                                                                                           
+900L001 ACB USER SET D237-0000001-000000 REJECTED                                                                                                                                                     
+901L001 D237/0000001/000000 00004-*** INVALID FIRST ACTION DATE ***                                                                                                                                   
+901L001 D237/0000001/000001 00034-*** WARNING ONLY *** HOMING ACCOUNT INVALID ***                                                                                                                     
+901L000 00014-*** NO TRANSMISSION CONTENTS WERE ACCEPTED ***                                                                                                                                          
+999L000000007                                                                                                                                                                                         

@@ -1,0 +1,124 @@
+//Tables
+.table{
+  margin-bottom: 0px;
+}
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th {
+  line-height: 1.8;
+  border-color: #e9eaec;
+}
+.table.table-dark thead th {
+    color: #fff;
+}
+.table-sm>tbody>tr>td,
+.table-sm>tbody>tr>th,
+.table-sm>tfoot>tr>td,
+.table-sm>tfoot>tr>th,
+.table-sm>thead>tr>td.table-sm>thead>tr>th {
+  padding: 7.5px;
+}
+.table-hover tbody tr:hover {
+    background-color: #f7f7f7;
+}
+.table-lg>tbody>tr>td,
+.table-lg>tbody>tr>th,
+.table-lg>tfoot>tr>td,
+.table-lg>tfoot>tr>th,
+.table-lg>thead>tr>td,
+.table-lg>thead>tr>th {
+  padding: 15px;
+}
+
+.table-xl>tbody>tr>td,
+.table-xl>tbody>tr>th,
+.table-xl>tfoot>tr>td,
+.table-xl>tfoot>tr>th,
+.table-xl>thead>tr>td,
+.table-xl>thead>tr>th {
+  padding: 20px;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+  background-color: #fbfbfb;
+}
+
+.table-hover>tbody>tr:hover {
+  background-color: #fafafa;
+}
+
+.table-bordered {
+  border: 1px solid #e9eaec;
+}
+
+.table>thead>tr>th {
+  color: #717171;
+  border-bottom: 1px solid #e9eaec;
+}
+
+.table .thead-dark th {
+  background-color: #515365;
+  border-color: #515365;
+}
+
+.table .thead-light th {
+  background-color: #fafafa;
+  border-color: #e9eaec;
+  color: #717171;
+}
+.table th,
+.table td {
+  vertical-align: middle;
+}
+.table tr.selected {
+  background-color: #fafafa;
+}
+.table-overflow{
+  width: 100%;
+  overflow-x: auto;
+  .title{
+    line-height: 40px;
+  }
+}
+.arrow-none:after {
+  display: none;
+}
+// Datatable
+#datatable_length .form-control-sm{
+  padding: 0px!important;
+}
+.page-item.active .page-link{
+  background-color: $preset;
+  border-color: $preset;
+}
+.page-link:focus{
+  box-shadow: none;
+}
+.page-link{
+  color: $preset;
+}
+.badge-outline-success{
+    color: #70c89a;
+    border: 1px solid #70c89a;
+}
+.badge-outline-info{
+    color: #007bff;
+    border: 1px solid #007bff;
+}
+.badge-outline-danger{
+    color: #ee8a97;
+    border: 1px solid #ee8a97;
+}
+.badge-outline-warning{
+    color: #f1b863;
+    border: 1px solid #f1b863;
+}
+.badge{
+    font-size: 12px;
+    line-height: 1;
+    padding: 5px 10px;
+    font-weight: 500;
+}

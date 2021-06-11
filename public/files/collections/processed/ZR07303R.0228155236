@@ -1,0 +1,15 @@
+000L2021022800000PAYPORT CONSULTING PTY LTD    000000007303                                                                                                                                           
+900L000 TRANSMISSION 07303-0000068 REJECTED                                                                                                                                                           
+900L001 ACB USER SET D237-0000073-000000 REJECTED                                                                                                                                                     
+901L001 D237/0000073/000001 00031-*** USER SEQ. NOT IN RANGE ***                                                                                                                                      
+901L001 D237/0000073/000002 00031-*** USER SEQ. NOT IN RANGE ***                                                                                                                                      
+901L001 D237/0000073/000003 00031-*** USER SEQ. NOT IN RANGE ***                                                                                                                                      
+901L001 D237/0000073/000004 00049-*** CONTRA SEQ. NOT IN RANGE ***                                                                                                                                    
+901L001 D237/0000073/000005 00031-*** USER SEQ. NOT IN RANGE ***                                                                                                                                      
+901L001 D237/0000073/000006 00031-*** USER SEQ. NOT IN RANGE ***                                                                                                                                      
+901L001 D237/0000073/000007 00049-*** CONTRA SEQ. NOT IN RANGE ***                                                                                                                                    
+901L001 D237/0000073/000008 00031-*** USER SEQ. NOT IN RANGE ***                                                                                                                                      
+901L001 D237/0000073/000009 00049-*** CONTRA SEQ. NOT IN RANGE ***                                                                                                                                    
+901L001 D237/0000073/000000 00011-*** TRAILER LAST SEQ NO NOT = LAST TRAN ***                                                                                                                         
+901L000 00014-*** NO TRANSMISSION CONTENTS WERE ACCEPTED ***                                                                                                                                          
+999L000000015                                                                                                                                                                                         

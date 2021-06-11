@@ -1,0 +1,39 @@
+2019/06/18 20:42:52:093 Postman-1560853310382 Swapping the old app with new one
+2019/06/18 20:42:52:154 Postman-1560853310382 Swapping done
+2019/06/18 20:42:52:197 Postman-1560853310382 Parent process is alive, killing it now
+2019/06/18 21:24:45:556 Postman-1560872608363 Swapping the old app with new one
+2019/06/18 21:24:45:562 Postman-1560872608363 Swapping done
+2019/06/18 21:24:45:576 Postman-1560872608363 Parent process is alive, killing it now
+2019/06/28 22:01:12:981 Postman-1561738432831 Swapping the old app with new one
+2019/06/28 22:01:13:405 Postman-1561738432831 Swapping done
+2019/06/28 22:01:13:422 Postman-1561738432831 Parent process is alive, killing it now
+2019/07/01 21:32:56:294 Postman-1561985252310 Swapping the old app with new one
+2019/07/01 21:32:56:399 Postman-1561985252310 Swapping done
+2019/07/01 21:32:56:415 Postman-1561985252310 Parent process is alive, killing it now
+2019/12/04 15:20:26:276 Postman-1575441978408 Swapping the old app with new one
+2019/12/04 15:20:26:362 Postman-1575441978408 Swapping done
+2019/12/04 15:20:26:462 Postman-1575441978408 Parent process is alive, killing it now
+2019/12/04 21:03:37:693 Postman-1575465870659 Swapping the old app with new one
+2019/12/04 21:03:37:830 Postman-1575465870659 Swapping done
+2019/12/04 21:03:38:031 Postman-1575465870659 Parent process is alive, killing it now
+2020/01/02 21:39:09:485 Postman-1577972541681 Swapping the old app with new one
+2020/01/02 21:39:10:673 Postman-1577972541681 Swapping done
+2020/01/02 21:39:10:904 Postman-1577972541681 Parent process is alive, killing it now
+2020/02/01 21:53:54:570 Postman-1580559360919 Swapping the old app with new one
+2020/02/01 21:53:54:645 Postman-1580559360919 Swapping done
+2020/02/01 21:53:54:660 Postman-1580559360919 Parent process is alive, killing it now
+2020/02/11 20:57:42:694 Postman-1581414716595 Swapping the old app with new one
+2020/02/11 20:57:42:785 Postman-1581414716595 Swapping done
+2020/02/11 20:57:42:836 Postman-1581414716595 Parent process is alive, killing it now
+2020/02/20 21:35:50:617 Postman-1582194707256 Swapping the old app with new one
+2020/02/20 21:35:50:980 Postman-1582194707256 Swapping done
+2020/02/20 21:35:50:997 Postman-1582194707256 Parent process is alive, killing it now
+2020/02/28 21:10:23:080 Postman-1582871975044 Swapping the old app with new one
+2020/02/28 21:10:23:417 Postman-1582871975044 Swapping done
+2020/02/28 21:10:23:801 Postman-1582871975044 Parent process is alive, killing it now
+2020/03/12 18:16:41:025 Postman-1584016081841 Swapping the old app with new one
+2020/03/12 18:16:41:084 Postman-1584016081841 Swapping done
+2020/03/12 18:16:41:151 Postman-1584016081841 Parent process is alive, killing it now
+2020/03/16 21:15:43:297 Postman-1584358208574 Swapping the old app with new one
+2020/03/16 21:15:43:468 Postman-1584358208574 Swapping done
+2020/03/16 21:15:43:559 Postman-1584358208574 Parent process is alive, killing it now

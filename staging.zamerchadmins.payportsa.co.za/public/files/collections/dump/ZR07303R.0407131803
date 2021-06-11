@@ -1,0 +1,7 @@
+000L2020040700000PAYPORT CONSULTING PTY LTD&nbs000000007303                                                                                                                       sp;&nbsp;&nbsp;&nbsp
+900L000 TRANSMISSION 07303-p;&n    REJECTED                                                                                                                                                           
+901L000 00007-*** TRANS. HEADER DEST. NOT 00000 ***                                                                                                                                                   
+901L000 00006-*** TRANS. HEADER GEN-NO NOT NUMERIC ***                                                                                                                                                
+901L000 00008-*** TRANS. RECORD-ID INVALID (NOT NUMERIC) ***                                                                                                                                          
+901L000 00002-*** UNEXPECTED END OF INPUT ***                                                                                                                                                         
+999L000000007                                                                                                                                                                                         

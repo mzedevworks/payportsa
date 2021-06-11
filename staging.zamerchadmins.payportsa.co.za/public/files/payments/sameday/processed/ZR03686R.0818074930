@@ -1,0 +1,11 @@
+000T2020081800000PAYPORT CONSULTING PTY LTD    TEST   03686                                                                                                                                           
+900T000 TRANSMISSION 03686-0000001 ACCEPTED                                                                                                                                                           
+901T000 00006-*** TRANS. NUMBER NOT "TEST" - CHECK BYPASSED ***                                                                                                                                       
+900T020 ACB USER SET F799-0000001-000004 ACCEPTED                                                                                                                                                     
+903T020T1063200504047088192F79900000163200504048003440100000010000200818880   PAYPORT                 salaryMEDIRO 002                    00000000000000000000                21                      
+903T020T1063200504047088192F79900000263200504047544780100000015000200818880   PAYPORT                 salaryRIGHT  004                    00000000000000000000                21                      
+903T020T1063200504047088192F79900000363200604047546180100000015100200818880   PAYPORT                 salaryHELLO  001                    00000000000000000000                21                      
+903T020T1263200504047088192F79900000463200504047088192100000040100200818100000PAYPORT   CONTRAPGUEGNHWS30HLT                                                                                          
+901T020 F799/0000001/000003 00032-*** WARNING ONLY *** HOMING BRANCH INVALID ***                                                                                                                      
+901T000 00014-*** NO LIVE DATA WAS TRANSMITTED ***                                                                                                                                                    
+999T000000011                                                                                                                                                                                         

@@ -1,0 +1,21 @@
+000T2020082900000PAYPORT CONSULTING PTY LTD    000000003686                                                                                                                                           
+900T000 TRANSMISSION 03686-0000001 REJECTED                                                                                                                                                           
+901T000 00006-*** TRANS. NUMBER NOT "TEST" - CHECK BYPASSED ***                                                                                                                                       
+900T030 AHV USER SET      ABSAIN-0000001-REJECTED                                                                                                                                                     
+901T030 ABSAIN-0000001/0000009874561231/00000001 00022-*** USER BRANCH INVALID ***                                                                                                                    
+901T030 ABSAIN-0000001/0000009874561231/00000001 00056-*** CELL PHONE IDENTIFIER NOT SELECTED  ***                                                                                                    
+901T030 ABSAIN-0000001/0000009874561231/00000001 00058-*** EMAIL IDENTIFIER NOT SELECTED  ***                                                                                                         
+901T030 ABSAIN-0000001/0000009874561235/00000002 00022-*** USER BRANCH INVALID ***                                                                                                                    
+901T030 ABSAIN-0000001/0000009874561235/00000002 00056-*** CELL PHONE IDENTIFIER NOT SELECTED  ***                                                                                                    
+901T030 ABSAIN-0000001/0000009874561235/00000002 00058-*** EMAIL IDENTIFIER NOT SELECTED  ***                                                                                                         
+901T030 ABSAIN-0000001/0000009874561230/00000003 00022-*** USER BRANCH INVALID ***                                                                                                                    
+901T030 ABSAIN-0000001/0000009874561230/00000003 00056-*** CELL PHONE IDENTIFIER NOT SELECTED  ***                                                                                                    
+901T030 ABSAIN-0000001/0000009874561230/00000003 00058-*** EMAIL IDENTIFIER NOT SELECTED  ***                                                                                                         
+901T030 ABSAIN-0000001/0000009874561232/00000004 00022-*** USER BRANCH INVALID ***                                                                                                                    
+901T030 ABSAIN-0000001/0000009874561232/00000004 00056-*** CELL PHONE IDENTIFIER NOT SELECTED  ***                                                                                                    
+901T030 ABSAIN-0000001/0000009874561232/00000004 00058-*** EMAIL IDENTIFIER NOT SELECTED  ***                                                                                                         
+901T030 ABSAIN-0000001/0000009874561233/00000005 00022-*** USER BRANCH INVALID ***                                                                                                                    
+901T030 ABSAIN-0000001/0000009874561233/00000005 00056-*** CELL PHONE IDENTIFIER NOT SELECTED  ***                                                                                                    
+901T030 ABSAIN-0000001/0000009874561233/00000005 00058-*** EMAIL IDENTIFIER NOT SELECTED  ***                                                                                                         
+901T000 00014-*** NO TRANSMISSION CONTENTS WERE ACCEPTED ***                                                                                                                                          
+999T000000021                                                                                                                                                                                         

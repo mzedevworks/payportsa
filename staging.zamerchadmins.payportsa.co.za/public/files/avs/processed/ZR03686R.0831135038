@@ -1,0 +1,13 @@
+000T2020083100000PAYPORT CONSULTING PTY LTD    000000003686                                                                                                                                           
+900T000 TRANSMISSION 03686-0000001 REJECTED                                                                                                                                                           
+901T000 00006-*** TRANS. NUMBER NOT "TEST" - CHECK BYPASSED ***                                                                                                                                       
+900T030 AHV USER SET      ABSAIN-0000001-REJECTED                                                                                                                                                     
+901T030 ABSAIN-0000001/0000009874561230/00000001 00058-*** EMAIL IDENTIFIER NOT SELECTED  ***                                                                                                         
+901T030 ABSAIN-0000001/0000009874561231/00000002 00058-*** EMAIL IDENTIFIER NOT SELECTED  ***                                                                                                         
+901T030 ABSAIN-0000001/0000009874561232/00000003 00058-*** EMAIL IDENTIFIER NOT SELECTED  ***                                                                                                         
+901T030 ABSAIN-0000001/0000009874561233/00000004 00058-*** EMAIL IDENTIFIER NOT SELECTED  ***                                                                                                         
+901T030 ABSAIN-0000001/0000009874561234/00000005 00058-*** EMAIL IDENTIFIER NOT SELECTED  ***                                                                                                         
+901T030 ABSAIN-0000001/0000009874561235/00000006 00058-*** EMAIL IDENTIFIER NOT SELECTED  ***                                                                                                         
+901T030 ABSAIN-0000001/0000009874561236/00000007 00058-*** EMAIL IDENTIFIER NOT SELECTED  ***                                                                                                         
+901T000 00014-*** NO TRANSMISSION CONTENTS WERE ACCEPTED ***                                                                                                                                          
+999T000000013                                                                                                                                                                                         

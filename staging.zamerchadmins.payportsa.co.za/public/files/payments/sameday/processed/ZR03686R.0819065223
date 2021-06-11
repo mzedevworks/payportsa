@@ -1,0 +1,8 @@
+000T2020081900000PAYPORT CONSULTING PTY LTD    TEST   03686                                                                                                                                           
+900T000 TRANSMISSION 03686-0000001 ACCEPTED                                                                                                                                                           
+901T000 00006-*** TRANS. NUMBER NOT "TEST" - CHECK BYPASSED ***                                                                                                                                       
+900T020 ACB USER SET F799-0000001-000002 ACCEPTED                                                                                                                                                     
+903T020T1063200504047088192F79900000163200504048003440100000001000200819880   PAYPORT                 salaryMEDIRO002                     00000000000000000000                21                      
+903T020T1263200504047088192F79900000263200504047088192100000001000200819100000PAYPORT   CONTRALFSYNUSTUB7BZQ                                                                                          
+901T000 00014-*** NO LIVE DATA WAS TRANSMITTED ***                                                                                                                                                    
+999T000000008                                                                                                                                                                                         

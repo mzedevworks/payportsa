@@ -1,0 +1,24 @@
+000L2020072900000PAYPORT CONSULTING PTY LTD2   000000006431                                                                                                                                           
+900L000 TRANSMISSION 06431-0000001 REJECTED                                                                                                                                                           
+901L000 00006-*** TRANS. NUMBER NOT NEXT IN SEQUENCE ***                                                                                                                                              
+900L020 ACB USER SET C635-0000001-000000 REJECTED                                                                                                                                                     
+901L020 C635/0000001/000000 00006-*** USER GEN NUMBER NOT NEXT IN SEQUENCE ***                                                                                                                        
+901L020 C635/0000001/000001 00025-*** NOMINATED ACCOUNT 04094544892 NOT REGISTERED ***                                                                                                                
+901L020 C635/0000001/000001 00070-*** WARNING : TRANSACTION AMOUNT EXCEEDS CREDIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                             
+901L020 C635/0000001/000001 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L020 C635/0000001/000001 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L020 C635/0000001/000001 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L020 C635/0000001/000001 00032-*** HOMING BRANCH INVALID ***                                                                                                                                       
+901L020 C635/0000001/000002 00070-*** WARNING : TRANSACTION AMOUNT EXCEEDS CREDIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                             
+901L020 C635/0000001/000002 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L020 C635/0000001/000002 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L020 C635/0000001/000002 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L020 C635/0000001/000002 00032-*** HOMING BRANCH INVALID ***                                                                                                                                       
+901L020 C635/0000001/000003 00045-*** CONTRA USER BRANCH ERROR ***                                                                                                                                    
+901L020 C635/0000001/000003 00046-*** CONTRA NOM. ACCOUNT ERROR ***                                                                                                                                   
+901L020 C635/0000001/000003 00050-*** CONTRA HOM. BRANCH ERROR ***                                                                                                                                    
+901L020 C635/0000001/000003 00058-*** CONTRA REFERENCE SHORT NAME INVALID ***                                                                                                                         
+901L020 C635/0000001/000000 00012-*** TRAILER DR RECS 000002 NOT = CALCULATED DR RECS 000001 ***                                                                                                      
+901L020 C635/0000001/000000 00013-*** TRAILER CR RECS 000001 NOT = CALCULATED CR RECS 000002 ***                                                                                                      
+901L000 00014-*** NO TRANSMISSION CONTENTS WERE ACCEPTED ***                                                                                                                                          
+999L000000024                                                                                                                                                                                         

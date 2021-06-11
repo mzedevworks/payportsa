@@ -1,0 +1,281 @@
+// Tabs
+.nav-tabs {
+  border-bottom: 1px solid #e9eaec;
+  > li {
+    margin-bottom: -2px;
+    > a {
+      margin-right: 0px;
+      line-height: 2.5;
+      border-radius: 0;
+      color: #515365;
+      opacity: 0.75;
+      border: 0px;
+      border-bottom: 2px solid transparent;
+      display: block;
+      padding: 10px 15px;
+      transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      &:hover {
+        border-color: transparent;
+        background-color: transparent;
+        opacity: 1;
+      }
+      &:focus {
+        background-color: transparent;
+        opacity: 1;
+      }
+      &.active {
+        border: 0px;
+        background-color: transparent;
+        border-bottom: 2px solid $preset;
+        opacity: 1;
+        &:hover, &:focus {
+          border: 0px;
+          background-color: transparent;
+          border-bottom: 2px solid $preset;
+          opacity: 1;
+        }
+        &.nav-link {
+          border-bottom: 2px solid $preset;
+          color: #515365;
+          background-color: transparent;
+        }
+      }
+    }
+  }
+  .nav-link {
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    &:hover, &:focus, &:active {
+      border-color: transparent;
+    }
+  }
+}
+
+.tab-success .nav-tabs > li > a.active {
+  border-bottom: 2px solid #24d5d8;
+  &:hover, &:focus {
+    border-bottom: 2px solid #24d5d8;
+  }
+}
+
+.tab-info .nav-tabs > li > a.active {
+  border-bottom: 2px solid #04a1f4;
+  &:hover, &:focus {
+    border-bottom: 2px solid #04a1f4;
+  }
+}
+
+.tab-warning .nav-tabs > li > a.active {
+  border-bottom: 2px solid #fecd2f;
+  &:hover, &:focus {
+    border-bottom: 2px solid #fecd2f;
+  }
+}
+
+.tab-danger .nav-tabs > li > a.active {
+  border-bottom: 2px solid #fd3259;
+  &:hover, &:focus {
+    border-bottom: 2px solid #fd3259;
+  }
+}
+
+.center-tabs .nav-tabs {
+  text-align: center;
+  -webkit-box-pack: center !important;
+  -webkit-justify-content: center !important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+  > li {
+    float: none;
+    display: inline-block;
+  }
+}
+
+.justified-tabs .nav-tabs {
+  width: 100%;
+  > li {
+    display: table-cell;
+    width: 1%;
+    text-align: center;
+    float: none;
+  }
+}
+
+.nav-pills > li {
+  + li {
+    margin-left: 5px;
+  }
+  > a {
+    border-radius: 3px;
+    opacity: 0.75;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: transparent;
+    color: #515365;
+    border: 1px solid transparent;
+    padding: 5px 15px;
+    &:hover, &:focus {
+      background-color: transparent;
+      opacity: 1;
+    }
+    &.active {
+      color: #ffffff;
+      border-color: $preset;
+      background-color: $preset;
+      border: 1px solid $preset;
+      opacity: 1;
+      &:hover, &:focus {
+        color: #ffffff;
+        border-color:  $preset;
+        background-color:  $preset;
+        border: 1px solid $preset;
+        opacity: 1;
+      }
+      &.nav-link {
+        color: #ffffff;
+        background-color: $preset;
+        border-color: $preset;
+      }
+    }
+  }
+}
+
+.nav-vertical {
+  .nav-pills {
+    float: left;
+    width: 160px;
+    padding: 0px 15px;
+    display: block;
+    > li {
+      margin-bottom: 15px;
+      + li {
+        margin-left: 0px;
+      }
+    }
+  }
+  .tab-content {
+    float: left;
+    width: 70%;
+  }
+}
+
+.pill-success .nav-pills > li > a.active {
+  border-color: #24d5d8;
+  background-color: #24d5d8;
+  border: 1px solid #24d5d8;
+  &:hover, &:focus {
+    border-color: #24d5d8;
+    background-color: #24d5d8;
+    border: 1px solid #24d5d8;
+  }
+  &.nav-link {
+    color: #ffffff;
+    border-color: #24d5d8;
+  }
+}
+
+.pill-info .nav-pills > li > a.active {
+  border-color: #04a1f4;
+  background-color: #04a1f4;
+  border: 1px solid #04a1f4;
+  &:hover, &:focus {
+    border-color: #04a1f4;
+    background-color: #04a1f4;
+    border: 1px solid #04a1f4;
+  }
+  &.nav-link {
+    color: #ffffff;
+    border-color: #04a1f4;
+  }
+}
+
+.pill-warning .nav-pills > li > a.active {
+  border-color: #fecd2f;
+  background-color: #fecd2f;
+  border: 1px solid #fecd2f;
+  &:hover, &:focus {
+    border-color: #fecd2f;
+    background-color: #fecd2f;
+    border: 1px solid #fecd2f;
+  }
+  &.nav-link {
+    color: #ffffff;
+    border-color: #fecd2f;
+  }
+}
+.pill-danger .nav-pills > li > a.active {
+  border-color: #fd3259;
+  background-color: #fd3259;
+  border: 1px solid #fd3259;
+  &:hover, &:focus {
+    border-color: #fd3259;
+    background-color: #fd3259;
+    border: 1px solid #fd3259;
+  }
+  &.nav-link {
+    color: #ffffff;
+    border-color: #fd3259;
+  }
+}
+.list-group-item.active{
+  background-color: $preset!important;
+  border-color: $preset!important;
+}
+/*----------------------------------------
+ Accordion
+----------------------------------------*/
+.accordion {
+  .card {
+    margin-bottom: 15px;
+    .card-header {
+      padding: 0px;
+      .card-title a {
+        padding: 15px 25px;
+        display: block;
+        color: #515365;
+        &:not(.collapsed):after {
+          transform: rotate(90deg);
+          -webkit-transform: rotate(90deg);
+          -moz-transform: rotate(90deg);
+          -o-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+        }
+        &:after {
+          content: "\F142";
+          font-family: "Material Design Icons";
+          float: left;
+          margin-right: 10px;
+          transition: all 0.3s ease-in-out;
+          -webkit-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
+          -ms-transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+    .card-body {
+      padding-top: 5px;
+    }
+  }
+  &.nested > .card {
+    margin-bottom: 0px;
+    border-bottom: 0px;
+    &:last-child {
+      border-bottom: 1px solid #e9eaec;
+    }
+  }
+  &.borderless > .card {
+    margin-bottom: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    &:last-child {
+      border-bottom: 0px;
+    }
+  }
+}

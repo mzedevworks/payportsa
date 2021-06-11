@@ -1,0 +1,15 @@
+000T2020090400000PAYPORT CONSULTING PTY LTD    000000006429                                                                                                                                           
+900T000 TRANSMISSION 06429-0000001 REJECTED                                                                                                                                                           
+998T-*** SERVICE AHV        STATUS FORCED TO TEST BY CONTROL INDICATOR ***                                                                                                                            
+900T030 AHV USER SET      ABSAIN-0000001-REJECTED                                                                                                                                                     
+998T ABSAIN0001-*** USER SET STATUS FORCED TO TEST BY CONTROL INDICATOR ***                                                                                                                           
+998T ABSAIN0001-*** USER SET STATUS FORCED TO TEST BY TRANSMISSION OR SERVICE STATUS ***                                                                                                              
+901T030 ABSAIN-0000001/0000001608011550/00000001 00021-*** TRANSACTION STATUS NOT = HEADER STATUS ***                                                                                                 
+901T030 ABSAIN-0000001/0000001608011550/00000001 00021-*** TRANSACTION STATUS NOT = HEADER STATUS ***                                                                                                 
+901T030 ABSAIN-0000001/0000004068597732/00000002 00021-*** TRANSACTION STATUS NOT = HEADER STATUS ***                                                                                                 
+901T030 ABSAIN-0000001/0000004068597732/00000002 00021-*** TRANSACTION STATUS NOT = HEADER STATUS ***                                                                                                 
+901T030 ABSAIN-0000001/0000004058597732/00000003 00021-*** TRANSACTION STATUS NOT = HEADER STATUS ***                                                                                                 
+901T030 ABSAIN-0000001/0000004058597732/00000003 00021-*** TRANSACTION STATUS NOT = HEADER STATUS ***                                                                                                 
+901T030 ABSAIN-0000001/                /         00021-*** TRAILER STATUS NOT = HEADER STATUS ***                                                                                                     
+901L000 00014-*** NO TRANSMISSION CONTENTS WERE ACCEPTED ***                                                                                                                                          
+999T000000015                                                                                                                                                                                         

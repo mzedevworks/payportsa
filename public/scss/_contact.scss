@@ -1,0 +1,102 @@
+.form-control{
+    width: 100%;
+    font-size: 14px;
+    box-shadow: none;
+    color: #8a8a8a;
+    background: #ffffff;
+    padding: 10px;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+.form-control:focus{
+    box-shadow: none;
+    outline: none;
+    border-color: $preset!important;
+}
+// Search Box
+.search-box {
+  margin-right: 20px;
+  position: relative;
+  .form-control{
+      border: 1px solid #f1f1f1;
+      box-shadow: none;
+      outline: none;
+      height: 40px;
+      margin-top: 12px;
+      padding: 5px 20px;
+      font-size: 14px;
+      width: 250px;
+      border-radius: 30px;
+    }
+    i{
+      position: absolute;
+      top: 24px;
+      right: 15px;
+      cursor: pointer;
+      &:hover{
+        color: $preset;
+      }
+    }
+}
+.wrapper-page {
+    margin: 7.5% auto;
+    position: relative;
+}
+.gmaps, .gmaps-panaroma {
+    height: 300px;
+    background: #fff;
+}
+.mce-panel{
+    border-color: #e5e5e5!important;
+    background-color: #ffffff!important;
+}
+.mce-container, .mce-container *, .mce-widget, .mce-widget *, .mce-reset{
+    background: #ffffff;
+}
+.box-title{
+    font-size: 18px;
+    margin-bottom: 0;
+}
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before{
+    background-color: $preset !important;
+}
+.custom-radio .custom-control-input:checked~.custom-control-label::before{
+    background-color: $preset !important;
+}
+.custom-select {
+    display: inline-block;
+    width: 100%;
+    height: calc(30px + 2px);
+    padding: 0px 40px 0px 10px;
+    line-height: 1.5;
+    color: #4f5467;
+    vertical-align: middle;
+    border: 1px solid #e9ecef;
+    border-radius: 2px;
+    position: relative;
+    background: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.selected::after{
+    top: 0;
+    right: 15px;
+    z-index: 2;
+    color: #666;
+    display: block;
+    content: '\e93a';
+    position: absolute;
+    text-align: center;
+    font-size: inherit;
+    line-height: 35px;
+    font-family: 'LineIcons';
+}
+.selected{
+    position: relative;
+}

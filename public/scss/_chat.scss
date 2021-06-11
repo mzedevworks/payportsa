@@ -1,0 +1,210 @@
+// Chat Apps
+.chat-main-box{
+  .form-material{
+    border-bottom: 1px solid #e9ecef;
+    .form-control{
+      border: none;
+      padding: 10px 20px;
+      &:focus{
+        box-shadow: none;
+      }
+    }
+  }
+  .chat-left-aside{
+    position: relative;
+    width: 250px;
+    float: left;
+    z-index: 9;
+    top: 0px;
+    .chatonline{
+      padding: 0;
+      li{
+        a{
+          padding: 20px;
+          float: left;
+          width: 100%;
+          img{
+            margin-right: 10px;
+            float: left;
+            width: 30px;
+          }
+          span{
+            color: #212529;
+          }
+        }
+        a:hover,
+        a.active{
+          background: #f8f9fa;
+        }
+      }
+    }
+  }
+  .chat-right-aside{
+    width: calc(100% - 250px);
+    float: left;
+    border-left: 1px solid #e9ecef;
+    .box-title{
+      font-size: 18px;
+    }
+   .chat-list{
+    max-height: none;
+    height: 100%;
+    padding-top: 40px;
+    li{
+      list-style: none;
+      margin-top: 20px;
+      .chat-img{
+        display: inline-block;
+        width: 45px;
+        vertical-align: top;
+        img{
+          width: 45px;
+          border-radius: 100%;
+        }
+      }
+      .chat-content{
+        width: calc(100% - 50px);
+        display: inline-block;
+        padding-left: 15px;
+        h5{
+          font-size: 16px;
+          color: #6c757d;
+        }
+        .box{
+          display: inline-block;
+          color: #343a40;
+          padding: 3px 10px;
+          background: #f8f9fa;
+        }
+        .chat-time{
+          display: block;
+          text-align: left;
+          font-size: 10px;
+          color: #6c757d;
+          margin: 5px 0 15px 65px;
+        }
+      }
+    }
+    li.reverse{
+      text-align: right;
+      .chat-content{
+        padding-right: 15px;
+      }
+      .chat-time{
+        margin-right: auto;
+        text-align: right;
+      }
+    }
+   }
+  }
+}
+
+// Calander
+.fc-event{
+    border-radius: 2px;
+    border: none;
+    cursor: move;
+    font-size: 13px;
+    margin: 5px 0;
+    padding: 5px 5px;
+    text-align: center;
+    background-color: $preset;
+    color: #ffffff !important;
+}
+
+.calendar {
+  float: left;
+  margin-bottom: 0;
+}
+.none-border {
+  .modal-footer {
+    border-top: none;
+  }
+}
+
+.fc-toolbar {
+  margin-bottom: 5px;
+  h2 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+}
+
+.fc-day {
+  background: #ffffff;
+}
+
+.fc-toolbar .fc-state-active, .fc-toolbar .ui-state-active,
+.fc-toolbar button:focus, .fc-toolbar button:hover,
+.fc-toolbar .ui-state-hover {
+  z-index: 0;
+}
+
+.fc-widget-header {
+  border: 1px solid #d5d5d5;
+  background-color: #f1f1f1;
+}
+
+.fc-widget-content {
+  border: 1px solid #d5d5d5;
+}
+
+.fc {
+  th.fc-widget-header {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 10px 0;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
+.fc-button {
+  background: #ffffff;
+  border: 1px solid #d5d5d5;
+  color: #555555;
+  text-transform: capitalize;
+}
+
+.fc-text-arrow {
+  font-family: arial;
+  font-size: 16px;
+}
+
+.fc-state-hover {
+  background: #f1f1f1;
+}
+
+.fc-state-highlight {
+  background: #f0f0f0;
+}
+
+.fc-cell-overlay {
+  background: #f0f0f0;
+}
+
+.fc-unthemed {
+  .fc-today {
+    background: #ffffff;
+  }
+}
+
+.external-event {
+  color: #ffffff;
+  cursor: move;
+  margin: 10px 0;
+  padding: 6px 10px;
+}
+
+.fc-basic-view {
+  td.fc-week-number {
+    span {
+      padding-right: 5px;
+    }
+  }
+  td.fc-day-number {
+    padding-right: 5px;
+  }
+}

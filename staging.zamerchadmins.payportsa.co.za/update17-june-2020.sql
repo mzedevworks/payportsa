@@ -1,0 +1,1 @@
+ALTER TABLE `payments` CHANGE `amount` `amount` INT NULL DEFAULT '0';

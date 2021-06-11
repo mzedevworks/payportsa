@@ -1,0 +1,13 @@
+000L2020102500000PAYPORT CONSULTING PTY LTD    000000007303                                                                                                                                           
+900L000 TRANSMISSION 07303-0000020 REJECTED                                                                                                                                                           
+900L001 ACB USER SET D237-0000024-000000 REJECTED                                                                                                                                                     
+901L001 D237/0000024/000001 00025-*** NOMINATED ACCOUNT 04094544892 NOT REGISTERED ***                                                                                                                
+901L001 D237/0000024/000001 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000024/000001 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000024/000001 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000024/000001 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000024/000002 00045-*** CONTRA USER BRANCH ERROR ***                                                                                                                                    
+901L001 D237/0000024/000002 00046-*** CONTRA NOM. ACCOUNT ERROR ***                                                                                                                                   
+901L001 D237/0000024/000002 00050-*** CONTRA HOM. BRANCH ERROR ***                                                                                                                                    
+901L000 00014-*** NO TRANSMISSION CONTENTS WERE ACCEPTED ***                                                                                                                                          
+999L000000013                                                                                                                                                                                         

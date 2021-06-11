@@ -1,0 +1,6 @@
+000T2020021700000PayPortSA                     000000006428                                                                                                                                           
+900T000 TRANSMISSION 06428-0000001 REJECTED                                                                                                                                                           
+901T000 00004-*** TRANS. HEADER CLIENT CODE NOT FOUND ***                                                                                                                                             
+901T000 00008-*** TRANS. RECORD-ID INVALID (NOT NUMERIC) ***                                                                                                                                          
+901T000 00002-*** UNEXPECTED END OF INPUT ***                                                                                                                                                         
+999T000000006                                                                                                                                                                                         

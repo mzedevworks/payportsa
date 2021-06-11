@@ -1,0 +1,57 @@
+000T2020073000000PAYPORT CONSULTING PTY LTD    000000003686                                                                                                                                           
+900T000 TRANSMISSION 03686-0000012 REJECTED                                                                                                                                                           
+901T000 00006-*** TRANS. NUMBER NOT "TEST" - CHECK BYPASSED ***                                                                                                                                       
+900T020 ACB USER SET F799-0000012-000000 REJECTED                                                                                                                                                     
+901T020 F799/0000012/000000 00006-*** USER GEN NUMBER NOT NEXT IN SEQUENCE ***                                                                                                                        
+901T020 F799/0000012/000001 00025-*** NOMINATED ACCOUNT 04094544892 NOT REGISTERED ***                                                                                                                
+901T020 F799/0000012/000001 00070-*** WARNING : TRANSACTION AMOUNT EXCEEDS CREDIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                             
+901T020 F799/0000012/000001 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901T020 F799/0000012/000001 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901T020 F799/0000012/000001 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901T020 F799/0000012/000001 00032-*** HOMING BRANCH INVALID ***                                                                                                                                       
+901T020 F799/0000012/000002 00070-*** WARNING : TRANSACTION AMOUNT EXCEEDS CREDIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                             
+901T020 F799/0000012/000002 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901T020 F799/0000012/000002 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901T020 F799/0000012/000002 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901T020 F799/0000012/000002 00032-*** HOMING BRANCH INVALID ***                                                                                                                                       
+901T020 F799/0000012/000003 00070-*** WARNING : TRANSACTION AMOUNT EXCEEDS CREDIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                             
+901T020 F799/0000012/000003 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901T020 F799/0000012/000003 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901T020 F799/0000012/000003 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901T020 F799/0000012/000003 00032-*** HOMING BRANCH INVALID ***                                                                                                                                       
+901T020 F799/0000012/000004 00070-*** WARNING : TRANSACTION AMOUNT EXCEEDS CREDIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                             
+901T020 F799/0000012/000004 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901T020 F799/0000012/000004 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901T020 F799/0000012/000004 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901T020 F799/0000012/000004 00032-*** HOMING BRANCH INVALID ***                                                                                                                                       
+901T020 F799/0000012/000005 00045-*** CONTRA USER BRANCH ERROR ***                                                                                                                                    
+901T020 F799/0000012/000005 00046-*** CONTRA NOM. ACCOUNT ERROR ***                                                                                                                                   
+901T020 F799/0000012/000005 00050-*** CONTRA HOM. BRANCH ERROR ***                                                                                                                                    
+901T020 F799/0000012/000005 00058-*** CONTRA REFERENCE SHORT NAME INVALID ***                                                                                                                         
+901T020 F799/0000012/000000 00012-*** TRAILER DR RECS 000004 NOT = CALCULATED DR RECS 000001 ***                                                                                                      
+901T020 F799/0000012/000000 00013-*** TRAILER CR RECS 000001 NOT = CALCULATED CR RECS 000004 ***                                                                                                      
+900T020 ACB USER SET F799-0000012-000000 REJECTED                                                                                                                                                     
+901T020 F799/0000012/000000 00006-*** USER GEN NUMBER NOT NEXT IN SEQUENCE ***                                                                                                                        
+901T020 F799/0000012/000006 00025-*** NOMINATED ACCOUNT 04094544892 NOT REGISTERED ***                                                                                                                
+901T020 F799/0000012/000006 00070-*** WARNING : TRANSACTION AMOUNT EXCEEDS CREDIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                             
+901T020 F799/0000012/000006 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901T020 F799/0000012/000006 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901T020 F799/0000012/000006 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901T020 F799/0000012/000006 00032-*** HOMING BRANCH INVALID ***                                                                                                                                       
+901T020 F799/0000012/000007 00045-*** CONTRA USER BRANCH ERROR ***                                                                                                                                    
+901T020 F799/0000012/000007 00046-*** CONTRA NOM. ACCOUNT ERROR ***                                                                                                                                   
+901T020 F799/0000012/000007 00050-*** CONTRA HOM. BRANCH ERROR ***                                                                                                                                    
+901T020 F799/0000012/000007 00058-*** CONTRA REFERENCE SHORT NAME INVALID ***                                                                                                                         
+901T020 F799/0000012/000008 00025-*** NOMINATED ACCOUNT 04094544892 NOT REGISTERED ***                                                                                                                
+901T020 F799/0000012/000008 00070-*** WARNING : TRANSACTION AMOUNT EXCEEDS CREDIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                             
+901T020 F799/0000012/000008 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901T020 F799/0000012/000008 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901T020 F799/0000012/000008 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901T020 F799/0000012/000008 00032-*** HOMING BRANCH INVALID ***                                                                                                                                       
+901T020 F799/0000012/000009 00045-*** CONTRA USER BRANCH ERROR ***                                                                                                                                    
+901T020 F799/0000012/000009 00046-*** CONTRA NOM. ACCOUNT ERROR ***                                                                                                                                   
+901T020 F799/0000012/000009 00050-*** CONTRA HOM. BRANCH ERROR ***                                                                                                                                    
+901T020 F799/0000012/000009 00058-*** CONTRA REFERENCE SHORT NAME INVALID ***                                                                                                                         
+901T020 F799/0000012/000000 00078-PAAF ERROR - MULTIPLE CONTRAS IN USER SET                                                                                                                           
+901T000 00014-*** NO TRANSMISSION CONTENTS WERE ACCEPTED ***                                                                                                                                          
+999T000000057                                                                                                                                                                                         

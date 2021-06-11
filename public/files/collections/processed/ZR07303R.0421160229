@@ -1,0 +1,21 @@
+000L2020042100000PAYPORT CONSULTING PTY LTD    000000007303                                                                                                                                           
+900L000 TRANSMISSION 07303-0000008 REJECTED                                                                                                                                                           
+901L001 00008-*** TRANS. RECORD-ID INVALID (NOT NUMERIC) ***                                                                                                                                          
+901L001 00002-*** UNEXPECTED END OF INPUT ***                                                                                                                                                         
+901L001 00002-*** UNEXPECTED END OF INPUT ***                                                                                                                                                         
+901L001 00002-*** UNEXPECTED END OF INPUT ***                                                                                                                                                         
+900L001 ACB USER SET D237-0000010-000000 REJECTED                                                                                                                                                     
+901L001 D237/0000010/000007 00034-*** WARNING ONLY *** HOMING ACCOUNT INVALID ***                                                                                                                     
+901L001 D237/0000010/000008 00037-*** ACTION DATE INVALID ***                                                                                                                                         
+901L001 D237/0000010/000008 00039-*** ENTRY CLASS NOT NUMERIC ***                                                                                                                                     
+901L001 D237/0000010/000008 00021-*** ENTRY CLASS NOT = DEBIT ENTRY CLASS ***                                                                                                                         
+901L001 D237/0000010/000008 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000010/000008 00035-*** ACCOUNT TYPE INVALID ***                                                                                                                                        
+901L001 D237/0000010/000008 00032-*** WARNING ONLY *** HOMING BRANCH INVALID ***                                                                                                                      
+901L001 D237/0000010/000008 00038-*** ACTION DATE CHANGED BEFORE CONTRA ***                                                                                                                           
+901L001 D237/0000010/000008 00038-*** ACTION DATE CHANGED BEFORE CONTRA ***                                                                                                                           
+901L001 D237/0000010/000008 00040-*** TAX CODE INVALID ***                                                                                                                                            
+901L001 D237/0000010/000008 00042-*** HOMING INS. NOT NUMERIC ***                                                                                                                                     
+901L000 00002-*** UNEXPECTED END OF INPUT ***                                                                                                                                                         
+901L000 00014-*** NO TRANSMISSION CONTENTS WERE ACCEPTED ***                                                                                                                                          
+999L000000021                                                                                                                                                                                         

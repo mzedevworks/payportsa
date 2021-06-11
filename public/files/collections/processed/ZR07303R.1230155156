@@ -1,0 +1,319 @@
+000L2020123000000PAYPORT CONSULTING PTY LTD    000000007303                                                                                                                                           
+900L000 TRANSMISSION 07303-0000040 REJECTED                                                                                                                                                           
+900L001 ACB USER SET D237-0000044-000000 REJECTED                                                                                                                                                     
+901L001 D237/0000044/000001 00025-*** NOMINATED ACCOUNT 04094544892 NOT REGISTERED ***                                                                                                                
+901L001 D237/0000044/000001 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000001 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000001 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000001 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000002 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000002 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000002 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000002 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000002 00080-*** WARNING ONLY - ACCOUNT TYPE CHANGE - 2 TO 1 ***                                                                                                                 
+901L001 D237/0000044/000003 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000003 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000003 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000003 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000004 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000004 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000004 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000004 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000005 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000005 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000005 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000005 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000006 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000006 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000006 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000006 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000007 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000007 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000007 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000007 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000008 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000008 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000008 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000008 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000009 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000009 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000009 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000009 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000010 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000010 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000010 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000010 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000010 00035-*** WARNING ONLY *** ACCOUNT TYPE INVALID ***                                                                                                                       
+901L001 D237/0000044/000011 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000011 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000011 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000011 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000011 00035-*** WARNING ONLY *** ACCOUNT TYPE INVALID ***                                                                                                                       
+901L001 D237/0000044/000012 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000012 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000012 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000012 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000013 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000013 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000013 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000013 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000014 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000014 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000014 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000014 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000015 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000015 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000015 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000015 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000016 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000016 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000016 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000016 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000017 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000017 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000017 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000017 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000018 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000018 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000018 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000018 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000019 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000019 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000019 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000019 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000020 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000020 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000020 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000020 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000021 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000021 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000021 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000021 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000022 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000022 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000022 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000022 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000023 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000023 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000023 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000023 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000024 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000024 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000024 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000024 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000025 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000025 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000025 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000025 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000026 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000026 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000026 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000026 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000027 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000027 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000027 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000027 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000028 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000028 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000028 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000028 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000029 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000029 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000029 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000029 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000030 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000030 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000030 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000030 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000031 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000031 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000031 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000031 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000032 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000032 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000032 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000032 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000033 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000033 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000033 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000033 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000034 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000034 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000034 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000034 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000035 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000035 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000035 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000035 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000035 00080-*** WARNING ONLY - ACCOUNT TYPE CHANGE - 2 TO 1 ***                                                                                                                 
+901L001 D237/0000044/000036 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000036 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000036 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000036 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000037 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000037 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000037 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000037 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000038 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000038 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000038 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000038 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000039 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000039 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000039 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000039 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000040 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000040 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000040 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000040 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000041 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000041 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000041 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000041 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000042 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000042 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000042 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000042 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000043 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000043 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000043 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000043 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000044 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000044 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000044 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000044 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000045 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000045 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000045 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000045 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000045 00034-*** WARNING ONLY *** HOMING ACCOUNT INVALID ***                                                                                                                     
+901L001 D237/0000044/000046 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000046 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000046 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000046 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000046 00080-*** WARNING ONLY - ACCOUNT TYPE CHANGE - 2 TO 1 ***                                                                                                                 
+901L001 D237/0000044/000047 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000047 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000047 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000047 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000048 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000048 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000048 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000048 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000048 00035-*** WARNING ONLY *** ACCOUNT TYPE INVALID ***                                                                                                                       
+901L001 D237/0000044/000049 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000049 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000049 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000049 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000050 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000050 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000050 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000050 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000051 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000051 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000051 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000051 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000052 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000052 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000052 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000052 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000053 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000053 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000053 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000053 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000054 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000054 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000054 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000054 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000055 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000055 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000055 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000055 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000056 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000056 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000056 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000056 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000057 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000057 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000057 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000057 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000058 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000058 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000058 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000058 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000059 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000059 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000059 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000059 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000060 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000060 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000060 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000060 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000061 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000061 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000061 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000061 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000062 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000062 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000062 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000062 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000063 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000063 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000063 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000063 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000064 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000064 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000064 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000064 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000065 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000065 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000065 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000065 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000066 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000066 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000066 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000066 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000067 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000067 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000067 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000067 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000068 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000068 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000068 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000068 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000069 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000069 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000069 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000069 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000070 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000070 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000070 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000070 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000070 00035-*** WARNING ONLY *** ACCOUNT TYPE INVALID ***                                                                                                                       
+901L001 D237/0000044/000071 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000071 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000071 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000071 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000071 00035-*** WARNING ONLY *** ACCOUNT TYPE INVALID ***                                                                                                                       
+901L001 D237/0000044/000072 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000072 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000072 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000072 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000072 00035-*** WARNING ONLY *** ACCOUNT TYPE INVALID ***                                                                                                                       
+901L001 D237/0000044/000073 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000073 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000073 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000073 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000074 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000074 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000074 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000074 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000075 00069-*** WARNING : TRANSACTION AMOUNT EXCEEDS DEBIT ITEM LIMIT - TRANSACTION WILL UNPAY ***                                                                              
+901L001 D237/0000044/000075 00023-*** USER BRANCH NOT = CONTROL ***                                                                                                                                   
+901L001 D237/0000044/000075 00025-*** NOM. ACCOUNT INVALID ***                                                                                                                                        
+901L001 D237/0000044/000075 00026-*** USER REFERENCE SHORT NAME INVALID ***                                                                                                                           
+901L001 D237/0000044/000076 00045-*** CONTRA USER BRANCH ERROR ***                                                                                                                                    
+901L001 D237/0000044/000076 00046-*** CONTRA NOM. ACCOUNT ERROR ***                                                                                                                                   
+901L001 D237/0000044/000076 00050-*** CONTRA HOM. BRANCH ERROR ***                                                                                                                                    
+901L000 00014-*** NO TRANSMISSION CONTENTS WERE ACCEPTED ***                                                                                                                                          
+999L000000319                                                                                                                                                                                         

@@ -1,0 +1,7 @@
+000L2020112900000PAYPORT CONSULTING PTY LTD    000000007303                                                                                                                                           
+900L000 TRANSMISSION 07303-0000032 REJECTED                                                                                                                                                           
+900L001 ACB USER SET D237-0000036-000000 REJECTED                                                                                                                                                     
+901L001 D237/0000036/000001 00035-*** WARNING ONLY *** ACCOUNT TYPE INVALID ***                                                                                                                       
+901L001 D237/0000036/000000 00018-*** TRAILER HASH TOTAL 576402521005 IS INCORRECT ***                                                                                                                
+901L000 00014-*** NO TRANSMISSION CONTENTS WERE ACCEPTED ***                                                                                                                                          
+999L000000007                                                                                                                                                                                         

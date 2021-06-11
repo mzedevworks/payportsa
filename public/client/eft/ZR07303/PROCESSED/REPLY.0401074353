@@ -1,0 +1,8 @@
+000T2020033100000PAYPORT CONSULTING PTY LTD    000000007303                                                                                                                                           
+900T000 TRANSMISSION 07303-0000001 REJECTED                                                                                                                                                           
+901T000 00006-*** TRANS. NUMBER NOT "TEST" - CHECK BYPASSED ***                                                                                                                                       
+900T001 ACB USER SET D237-0000001-000000 REJECTED                                                                                                                                                     
+901T001 D237/0000001/000000 00004-*** INVALID FIRST ACTION DATE ***                                                                                                                                   
+901T001 D237/0000001/000001 00034-*** WARNING ONLY *** HOMING ACCOUNT INVALID ***                                                                                                                     
+901T000 00014-*** NO TRANSMISSION CONTENTS WERE ACCEPTED ***                                                                                                                                          
+999T000000008                                                                                                                                                                                         
