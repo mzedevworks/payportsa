@@ -26,7 +26,8 @@ class Kernel extends ConsoleKernel
             Commands\SamedayPayReplydownloadCmd::class,
             Commands\HolidayCmd::class,
             Commands\AvsReplydownloadCmd::class,
-            Commands\CreateAvsCmd::class
+            Commands\CreateAvsCmd::class,
+            Commands\Test::class,
     ];
 
     /**
@@ -42,20 +43,20 @@ class Kernel extends ConsoleKernel
         //transaction:create-eft               Create and upload transmission files for EFT
         //transaction:create-eft-transmission  Create and upload transmission files for EFT
         //transaction:create-nach              Create records which has to sent to bank
-        //transaction:download-outputs 
+        //transaction:download-outputs
         //gmt+2
 
-        
-        
-        
-        
+
+
+
+
         $schedule->command('transaction:create-batch-collection')->everyFiveMinutes()
            ->timezone('Africa/Johannesburg');
-        
+
        //  $schedule->command('transaction:create-nach')->everyMinute()
        // ->timezone('Africa/Johannesburg')
        // ->between('15:30', '15:45');
-        
+
        $schedule->command('transaction:create-eft')->dailyAt('15:50')
            ->timezone('Africa/Johannesburg');
 
@@ -67,10 +68,10 @@ class Kernel extends ConsoleKernel
            ->between('18:05', '19:00');
         $schedule->command('transaction:download-outputs')->twiceDaily(8, 12)
            ->timezone('Africa/Johannesburg');*/
-        
-           
 
-        
+
+
+
            // create and send oneday/dated payment batches to absa
         $schedule->command('transaction:create-oneday-payment-eft')->weekdays()->at('15:10')
             ->timezone('Africa/Johannesburg');
@@ -78,14 +79,14 @@ class Kernel extends ConsoleKernel
             ->timezone('Africa/Johannesburg');
 
         //download and read oneday/dated payment batches result from absa
-        
+
         /*$schedule->command('transaction:download-oneday-payment-outputs')->weekdays()->everyMinute()
              ->between('15:20', '16:00')
              ->timezone('Africa/Johannesburg');
         $schedule->command('transaction:download-oneday-payment-outputs')->weekends()->everyMinute()
              ->between('07:50', '08:30')
              ->timezone('Africa/Johannesburg');*/
-        
+
         // create and send sameday payment batched to absa
         $schedule->command('transaction:create-sameday-payment-eft')->weekdays()->at('16:10')
             ->timezone('Africa/Johannesburg');
@@ -94,14 +95,14 @@ class Kernel extends ConsoleKernel
 
 
         //download and read sameday payment batches result from absa
-        
+
         /*$schedule->command('transaction:download-sameday-payment-outputs')->weekdays()->everyMinute()
              ->between('16:20', '17:00')
              ->timezone('Africa/Johannesburg');
          $schedule->command('transaction:download-sameday-payment-outputs')->weekdays()->everyMinute()
              ->between('08:30', '09:20')
              ->timezone('Africa/Johannesburg');*/
-        
+
 
         //update status of unsent payment batches
         $schedule->command('transaction:payment-batches')->dailyAt('18:00')
@@ -110,7 +111,7 @@ class Kernel extends ConsoleKernel
         //create holidays which are repetative
         $schedule->command('transaction:notify-holidays')->dailyAt('23:40')
            ->timezone('Africa/Johannesburg');
-        
+
         //Download and read notify me transactions
         /*$schedule->command('transaction:download-nmb-outputs')->everyFiveMinutes()
            ->timezone('Africa/Johannesburg');

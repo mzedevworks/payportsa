@@ -2,7 +2,8 @@
 return [
     'artisan' => [
         'command_filter' => [
-            'transaction:*'
+            'transaction:*',
+            'command:test'
         ],
     ],
 ];
