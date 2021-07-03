@@ -43,33 +43,33 @@ class CreateBatchCmd extends Command
      *
      * @return mixed
      */
-    
-    public function handle()
-    {   
 
-        
+    public function handle()
+    {
+
+
         //if cuttoff time is not reached, then we need deacrease a day of offset
         if(Helper::getSastTime()<config('constants.bankingCutOffTime')){
             $this->correctionBuffer--;
         }
-        
+
         $paymentDate=$this->getBatchPaymentDate('2 Day');
-        
-        
+
+
         $batches=Batch::where('action_date','<', $paymentDate)
             ->where('batch_status','=', 'pending')->where('batch_type','reocurr-collection')->get();
             //->update(['batch_status' => 'sent']);
 
         $this->setBatchAsSent($batches);
-        
+
         $this->batchCollectionType('reoccur','2 Day',$paymentDate);
         //$this->batchCollectionType('normal','2 Day',$paymentDate);
-        
+
         while ($this->isHoliday($paymentDate)==true) {
             $paymentDate=$this->calculatePaymentDate($paymentDate);
             $this->batchCollectionType('reoccur','2 Day',$paymentDate);
             //$this->batchCollectionType('normal','2 Day',$paymentDate);
-        }    
+        }
 
     }
 
@@ -85,11 +85,11 @@ class CreateBatchCmd extends Command
                 Helper::logStatusChange('batch_collection',$eachBatch,"Marked as sent");
                 $merchantAdmin=User::where('firm_id',$eachBatch->firm_id)->where('is_primary',1)->where('role_id',3)->first();
                 Mail::raw("Batch '".$eachBatch->batch_name."' is sent to ABSA", function($message) use($merchantAdmin){
-                   $message->from('lokesh.j@cisinlabs.com');
-                   $message->to('lokesh.j@cisinlabs.com')->subject("A batch is sent to ABSA!");
+                   $message->from('operations@payportsa.co.za');
+                   $message->to('musaz01@gmail.com')->subject("A batch is sent to ABSA!");
                });
             }
-            
+
         }
     }
 
@@ -109,7 +109,7 @@ class CreateBatchCmd extends Command
         }
 
         $collectionData->save();
-        
+
     }
     /*
     get payment on basis of the offset. based on this date, Customers will be fetched to put into batch
@@ -118,13 +118,13 @@ class CreateBatchCmd extends Command
         $currDate     = date('Y-m-d');
         $currDateTs=strtotime($currDate);
 
-        
+
         if($serviceType=='2 Day'){
             $offsetDays=$this->correctionBuffer+$this->twoDayPayBuffer;
-            
+
             $paymentDate = date('Y-m-d',strtotime("+".$offsetDays." day",$currDateTs));
         }
-        
+
 
         return $paymentDate;
     }
@@ -148,8 +148,8 @@ class CreateBatchCmd extends Command
             $customers = Customer::where(['status'=>1, 'is_deleted'=>0,'cust_type'=>$collectionType])->where('service_type',$serviceType)
                                 ->where('collection_date',"=",$paymentDate)->get();
         }
-        
-        
+
+
         if(count($customers)>0){
             $this->getCollection($customers);
         }
@@ -157,43 +157,43 @@ class CreateBatchCmd extends Command
 
     /*
     *   create a copy in Collections table from cutomers table for the customers from whome collection is due as per the payment day.
-    * 
+    *
     */
     private function getCollection($customers){
-        
+
         //$today  = date('Y-m-d');
-        
-        
+
+
         foreach($customers as $customer){
 
             $recurringCollection =null;
             $onceOffCollection=null;
-            
+
 
 
 
             if($customer->once_off_amount>0){
                 $onceOffCollection=$this->checkForOnceOffPayment($customer);
             }
-            
-            
+
+
             $custNextCollectionDateTs=strtotime($customer->next_collection_date);
             $custCollectionEndDateTs=strtotime($customer->collection_end_date);
-           
+
             /*collection will be taken if recurring amount is greater-then 0 and collection is same is given payment date
             Collection End date should have been passed payment date
             */
            if($customer->recurring_amount >0 && $custCollectionEndDateTs >=$custNextCollectionDateTs){
                 $recurringCollection=$this->checkForReoccurPayment($customer);
             }
-            
+
             if(!is_null($onceOffCollection)){
-                
+
                 $onceOffCollection=$this->verifySaveCollectionData($onceOffCollection,$customer);
             }
 
             if(!is_null($recurringCollection)){
-                
+
                 $recurringCollection=$this->verifySaveCollectionData($recurringCollection,$customer);
 
                 //need to set next collection date as per the frequency
@@ -203,7 +203,7 @@ class CreateBatchCmd extends Command
                     $customer->save();
                 }
             }
-            
+
         }
         echo "done";
     }
@@ -237,25 +237,25 @@ class CreateBatchCmd extends Command
             Helper::logStatusChange('batch_collection',$batchData,"Created");
             $merchantAdmin=User::where('firm_id',$customer->firm_id)->where('is_primary',1)->where('role_id',3)->first();
             Mail::raw("A new batch is created with name '".$batchData->batch_name."'", function($message) use($merchantAdmin){
-               $message->from('lokesh.j@cisinlabs.com');
-               $message->to('lokesh.j@cisinlabs.com')->subject("A new batch is created!");
+               $message->from('operations@payportsa.co.za');
+               $message->to('dean@payportsa.co.za')->subject("A new batch is created!");
            });
         }
         return $batchData;
     }
     function verifySaveCollectionData($collection,$customer){
-        
+
         $paymentDate=$collection->payment_date;
         $collectionType=$collection->payment_type;
         //echo $collection->payment_type;
-        
+
         if($collection->payment_type=="onceoff"){
             $collection->reffrence=trim($this->createRefrenceString($customer,$paymentDate,'O'));
         }else{
             $collection->reffrence=trim($this->createRefrenceString($customer,$paymentDate,'R'));
         }
-        
-        
+
+
 
 
         $collection->customer_id      = $customer->id;
@@ -268,8 +268,8 @@ class CreateBatchCmd extends Command
         $collection->service_type      = $customer->service_type;
         $collection->transmission_status      =0;
         $collection->entry_class      = $customer->firm->entry_class;
-        
-        
+
+
         $collectionCheckSql=Collections::
                     where(['customer_id'=>$customer->id, 'payment_type'=>$collectionType,'payment_date'=>$paymentDate])
                     //->whereIn('transmission_status',[0,1,2])
@@ -296,7 +296,7 @@ class CreateBatchCmd extends Command
     function checkForOnceOffPayment($customer){
         $onceOffCollection=null;
         $paymentDate=$customer->collection_date;
-        
+
         while ($this->isHoliday($paymentDate)==true) {
             $paymentDate=$this->calculatePaymentDate($paymentDate);
         }
@@ -308,7 +308,7 @@ class CreateBatchCmd extends Command
         while ($this->isHoliday($collectionDate)==true) {
             $collectionDate=$this->calculatePaymentDate($collectionDate);
         }
-        
+
         if(strtotime($collectionDate)==$paymentDateTs){
             $paymentDate=$this->getPaymentDate($customer,$transmissionDate);
             $onceOffTaken=Collections::where('customer_id',$customer->id)
@@ -322,8 +322,8 @@ class CreateBatchCmd extends Command
                 $onceOffCollection=new Collections();
                 $onceOffCollection->amount  = $customer->once_off_amount;
                 $onceOffCollection->payment_type      = "onceoff";
-                $onceOffCollection->payment_date     = $paymentDate; 
-                
+                $onceOffCollection->payment_date     = $paymentDate;
+
                 $batchData=$this->checkAndCreateBatch($customer,$paymentDate);
                 $onceOffCollection->batch_id=$batchData->id;
             }
@@ -347,7 +347,7 @@ class CreateBatchCmd extends Command
         }
         if(strtotime($collectionDate)==$paymentDateTs){
             $paymentDate=$this->getPaymentDate($customer,$transmissionDate);
-            
+
 
             $reoccuringTaken=Collections::where('customer_id',$customer->id)
                             ->where('payment_date',$paymentDate)
@@ -355,17 +355,17 @@ class CreateBatchCmd extends Command
                             //->whereIn('transmission_status',[0,1,2])
                             ->orderBy('payment_date')
                             ->get();
-            
+
             if($reoccuringTaken->isEmpty()){
                 $recurringCollection=new Collections();
                 $recurringCollection->amount  = $customer->recurring_amount;
                 $recurringCollection->payment_type      = "recurring";
-                $recurringCollection->payment_date     = $paymentDate; 
+                $recurringCollection->payment_date     = $paymentDate;
 
                 $batchData=$this->checkAndCreateBatch($customer,$paymentDate);
                 $recurringCollection->batch_id=$batchData->id;
             }
-            
+
         }
         return $recurringCollection;
     }
@@ -374,12 +374,12 @@ class CreateBatchCmd extends Command
         $offsetDateTs=strtotime($offsetDate);
         $newDate     = date('Y-m-d',strtotime("+1 day",$offsetDateTs));
         $newDateTs=strtotime($newDate);
-        
+
         //if given date is sunday
         if($this->isHoliday($newDate)==true){
             $newDate=$this->calculatePaymentDate($newDate);
         }
-        
+
         return $newDate;
     }
 
@@ -397,14 +397,14 @@ class CreateBatchCmd extends Command
         //There is ixed length of the name , so we might needto put fillers
         $fillerLen = 10-strlen($userAbbrivatedCode);
         //final name to be sent
-        
+
         $userAbbrivatedCode=$userAbbrivatedCode.str_repeat(' ',$fillerLen);
 
         $customStrg=time().$type.$customer->mandate_id;
         if(strlen($customStrg)>20){
             $customStrg=substr($customStrg, 0, 20);
         }
-        
+
 
         return $reffrenceStr=$userAbbrivatedCode.$customStrg;
     }
@@ -427,11 +427,11 @@ class CreateBatchCmd extends Command
     }
     function getPaymentDate($customer,$today){
         $todayTs=strtotime($today);
-        
-        $paymentDate=$today; //date of transaction
-        
 
-        
+        $paymentDate=$today; //date of transaction
+
+
+
         /*
          we need to have a working day to honour the transactions
          same day tranx, make sure transmission day is not sunday nor holiday
@@ -442,7 +442,7 @@ class CreateBatchCmd extends Command
         if($this->isHoliday($today)==true){
             $paymentDate=$this->calculatePaymentDate($today);
         }
-        
+
 
 
 
@@ -456,6 +456,6 @@ class CreateBatchCmd extends Command
         }
         return $paymentDate;
     }
-    
-  
+
+
 }

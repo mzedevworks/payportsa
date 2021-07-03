@@ -25,7 +25,7 @@ class EftCreateCmd extends Command
      * @var string
      */
     protected $description = 'Create and upload transmission files for EFT';
-    
+
     // bank variables
     protected $localDir='/'; //location where file will be generated
     protected $remoteDir='/';
@@ -47,9 +47,9 @@ class EftCreateCmd extends Command
     protected $transactionCountOfToday=0;
     protected $firstTransactionSequence=0;
     protected $linesInTransmissionFile=0;
-    
 
-    
+
+
     /**
      * Create a new command instance.
      *
@@ -68,17 +68,17 @@ class EftCreateCmd extends Command
         $this->transactionCountOfToday=$this->getTransmissionCountOfToday();
         $this->sentUserSetNumber=$this->getLastSuccessfulUserSetNumber();
         $this->getTransmissionNumber();
-        
+
     }
 
-    
+
 
     /**
      * Execute the console command.
      *
      * @return mixed
      */
-    
+
     public function handle()
     {
         $sftp="";
@@ -107,34 +107,34 @@ class EftCreateCmd extends Command
             $output  = $transmissionFooter;
 
             //echo $this->outputContent;
-        
+
             $this->uploadTransmissionFile($sftp);
         }else{
             Mail::raw("Absa SFTP connection failed:- SOS", function($message){
-               $message->from('lokesh.j@cisinlabs.com');
-               $message->to('lokesh.j@cisinlabs.com')->cc('dean@payportsa.co.za')->cc('operations@payportsa.co.za')->subject("ABSA SFTP connection failed - Uploading");
+               $message->from('operations@payportsa.co.za');
+               $message->to('musaz01@gmail.com')->cc('dean@payportsa.co.za')->cc('operations@payportsa.co.za')->subject("ABSA SFTP connection failed - Uploading");
            });
             die("not connected");
         }
     }
 
     function uploadTransmissionFile($sftp){
-         
+
 
             /*Writing transmission file with output*/
             $file_name = Config('constants.bankingSuitFolder').".".Date("Ymdhis").".txt"; //name of the generated file
 
             $newfile   = public_path($this->localDir.$file_name);
-            $file    = fopen($newfile, "w"); 
-            fwrite($file, $this->outputContent); 
+            $file    = fopen($newfile, "w");
+            fwrite($file, $this->outputContent);
             fclose ($file);
             /*End of Writing transmission file with output*/
 
             $remote_file = $this->remoteDir.$file_name;
 
             //upload file on ftp of absa
-            
-            
+
+
             $fileSent=false;
             $fileSent=$sftp->put($remote_file, $newfile, SFTP::SOURCE_LOCAL_FILE);
             while($fileSent==false){
@@ -159,7 +159,7 @@ class EftCreateCmd extends Command
            // });
             $sftp->_disconnect("");
             die("File created and uploaded successfuly");
-        
+
 
     }
 
@@ -180,12 +180,12 @@ class EftCreateCmd extends Command
     }
 
     private function generateTransmissionFooter(){
-        
+
         /*
         offset  name                                value
-        1-3     Identifier                          999 (fixed) 
+        1-3     Identifier                          999 (fixed)
         4       Status                              T / L
-        5-13    Number of records in transmission   total no of lines + 2 header line + 2 trailer line 
+        5-13    Number of records in transmission   total no of lines + 2 header line + 2 trailer line
         14-200  spaces                              186 spaces
         */
         $transmissiontrailer = "999".$this->environment.sprintf('%09d', $this->linesInTransmissionFile).str_repeat(' ',186);
@@ -224,7 +224,7 @@ class EftCreateCmd extends Command
             //final name to be sent
             $userAbbrivatedName=$accountHolderName.str_repeat(' ',$accHolderNameFillerLen);
             $amountsum = 0;
-        /* End of variables for the transactions*/ 
+        /* End of variables for the transactions*/
 
         $insertContra=false;
         $lastFirmId='';
@@ -236,7 +236,7 @@ class EftCreateCmd extends Command
         foreach ($collectionRecords as $key => $eachCollection) {
 
             /*
-            * as $key is not 0 , there is possibility that we may need to add contra, 
+            * as $key is not 0 , there is possibility that we may need to add contra,
             *or else it is a last collection record
             * Contra will not be added on first record
             */
@@ -250,13 +250,13 @@ class EftCreateCmd extends Command
                 if(($lastFirmId!=$eachCollection->firm_id) || ($lastPaymentDate!=$eachCollection->payment_date)){
 
                     $this->transactionCountOfToday=$this->getNextTransactionSequence();
-                    
+
                     $this->linesInTransmissionFile++;
                     $transactionRecordStr .=  $this->contraRecords($amountsum,date('ymd',strtotime($lastPaymentDate)),$company_bank_info,$collectionRecords[$key-1]->firm->trading_as);
-                    
+
                     $contraCount++;
                     $amountsum = 0 ;
-                    
+
                 }
             }
 
@@ -275,13 +275,13 @@ class EftCreateCmd extends Command
 
             $actionDate  = date('ymd',strtotime($eachCollection->payment_date));
             $amount       = sprintf('%011d',$eachCollection->amount*100);
-            
+
             $accountType=Helper::getAccountCodeAsAbsa($eachCollection->account_type);
             $amountsum = $amountsum+$amount;
 
             $usersequencenumber    = sprintf('%06d', (intval($this->transactionCountOfToday)));
             $accountHolderName=substr($eachCollection->account_holder_name, 0, 30);
-            
+
             $custAccountNameFillerLen  = 30-strlen($accountHolderName);
             $custAccountName=strtoupper($accountHolderName).str_repeat(' ',$custAccountNameFillerLen);
 
@@ -309,30 +309,30 @@ class EftCreateCmd extends Command
             $userAbbrivatedName=$accountHolderName.str_repeat(' ',$accHolderNameFillerLen);
 
             $this->linesInTransmissionFile++;
-            
+
             $transactionRecordStr .= "001".$this->environment."50".$company_bank_info->branch_code.$company_account_number.$bankserUserCode.$usersequencenumber.$homingBranchCode.$homingAccountNumber.$accountType.$amount.$actionDate.$entryClass.$tax_code.str_repeat(' ',3).$reference.$custAccountName.$nonStandaredHomingAccountNumber.str_repeat(' ',16)."21".str_repeat(' ',27)."\r";
 
             //update the collection records with details
             $this->updateCollectionRecord($eachCollection);
-            
+
             if((($key+1)===sizeof($collectionRecords))){
 
                 $this->transactionCountOfToday=$this->getNextTransactionSequence();
-                
+
                 $this->linesInTransmissionFile++;
 
                 $transactionRecordStr .=  $this->contraRecords($amountsum,$actionDate,$company_bank_info,$eachCollection->firm->trading_as);
-                
+
                 $contraCount++;
                 $amountsum = 0 ;
-                
+
             }
             $lastFirmId=$eachCollection->firm_id;
             $lastPaymentDate=$eachCollection->payment_date;
-            /* for userSet Footer */ 
+            /* for userSet Footer */
             $accountNumber=$this->debitersAccountNumber($eachCollection);
             $sumAccountNum=$this->sumAccountNumber($sumAccountNum,$accountNumber);
-            
+
             $debitTotal     = $debitTotal+($eachCollection->amount*100);
             /* end of variables for the userSet footer */
 
@@ -348,8 +348,8 @@ class EftCreateCmd extends Command
 
         $firstSequenceNumber    =  sprintf('%06d', $this->firstTransactionSequence);
         $lastSequenceNumber     = sprintf('%06d', $this->transactionCountOfToday);
-        $userGenerationNumber   =  sprintf('%04d', $this->currentUserSetNumber); 
-        
+        $userGenerationNumber   =  sprintf('%04d', $this->currentUserSetNumber);
+
         $this->linesInTransmissionFile++;
 
         $userHeader= "001".$this->environment."04".$bankserUserCode.$userSetCreationDate.$purgeDate.$firstActionDate.$lastActionDate.$firstSequenceNumber.$userGenerationNumber.$serviceType.'YY'.str_repeat(' ',143)."\r";
@@ -357,7 +357,7 @@ class EftCreateCmd extends Command
 
         // code to add footer
         $debitcount  = sprintf('%06d', $collectionRecords->count());
-        $creditcount = $contraCount = sprintf('%06d',$contraCount);  
+        $creditcount = $contraCount = sprintf('%06d',$contraCount);
 
         $totalcredit = sprintf('%012d', $debitTotal); //pre-pending zeros
         $totaldebit  = sprintf('%012d', $debitTotal); //pre-pending zeros
@@ -388,19 +388,19 @@ class EftCreateCmd extends Command
             52-62   Amount                              sum af all the transaction files amount
             63-68   Action Date                         date at which payment has to be done
             69-70   Entry Class                         10
-            71-74   Filler                              00000 
-            75-104  User reference 
+            71-74   Filler                              00000
+            75-104  User reference
             105-134 Filler                              30 spaces
-            135-196 Filler                              61 spaces       
+            135-196 Filler                              61 spaces
         */
         $bankserUserCode     =  $this->bankserUserCode;
         //get next sequence number to be get used in contra
-        
+
         $usersequencenumber=sprintf('%06d', $this->transactionCountOfToday);
-        
+
         $account_number    = sprintf('%011d', $company_bank_info->account_number);
         $total_amount      = sprintf('%011d', $total_amount);
-        
+
         //account holder Name to whome money has to transfered
         $accountHolderName = strtoupper($contraReff);//??$company_bank_info->account_holder_name;
         //There is ixed length of the name , so we might needto put fillers
@@ -409,10 +409,10 @@ class EftCreateCmd extends Command
         //final name to be sent
         $userAbbrivatedName=$accountHolderName.str_repeat(' ',$accHolderNameFillerLen);
 
-        $reference             = $userAbbrivatedName.'CONTRA'.strtoupper($this->generate_string(14));  
-        
+        $reference             = $userAbbrivatedName.'CONTRA'.strtoupper($this->generate_string(14));
+
         $contraRecord = "001".$this->environment."52".$company_bank_info->branch_code.$account_number.$bankserUserCode.$usersequencenumber.$company_bank_info->branch_code.$account_number."1".$total_amount.$action_date."10".str_repeat('0',4).$reference.str_repeat(' ',30).str_repeat(' ',65)."\r";
-        
+
         return $contraRecord;
     }
 
@@ -430,7 +430,7 @@ class EftCreateCmd extends Command
     function getAccountNumberHash($sumAccountNum,$contracount){
         $company_bank_info = CompanyBankInfo::first();
         $companyAccNum =  $company_bank_info->account_number;
-        
+
         $hash = ($sumAccountNum+(integer)$companyAccNum*$contracount)%1000000000000;
         $hash = str_pad($hash, 12,"0", STR_PAD_LEFT);
         return $hash;
@@ -443,7 +443,7 @@ class EftCreateCmd extends Command
 
     function debitersAccountNumber($collectionRow){
         /*
-            acount number from which money has to be deducted. 
+            acount number from which money has to be deducted.
             Account number more then 11 digit, is treated as non-standard account
         */
         if(strlen($collectionRow->account_number)>11){
@@ -451,7 +451,7 @@ class EftCreateCmd extends Command
         }else{
             $accountNumber = sprintf('%011d', $collectionRow->account_number);
         }
-        
+
         return $accountNumber;
     }
 
@@ -471,16 +471,16 @@ class EftCreateCmd extends Command
     function getServiceType($servType){
         switch ($servType) {
             case 'SAMEDAY':
-                $servicetype     = "CORPSSV   "; 
+                $servicetype     = "CORPSSV   ";
                 break;
             case 'ONE DAY':
-                $servicetype     = "SAMEDAY   "; 
+                $servicetype     = "SAMEDAY   ";
                 break;
             case 'TWO DAY':
-                $servicetype     = "TWO DAY   "; 
+                $servicetype     = "TWO DAY   ";
                 break;
             default:
-                $servicetype     = "SAMEDAY   "; 
+                $servicetype     = "SAMEDAY   ";
                 break;
         }
         return $servicetype;
@@ -499,15 +499,15 @@ class EftCreateCmd extends Command
         $userSetNumber=intval($userSetNumber);
         $count = 0;
         if(isset($userSetNumber)){
-            $count   = $userSetNumber;  
+            $count   = $userSetNumber;
         }
-        
+
         return $count;
     }
 
     /*
     *   get next userset number.
-    *   User set , is set of group of transaction sent to ABSA. 
+    *   User set , is set of group of transaction sent to ABSA.
     *   Single transmission could have multiple UserSets.
     *   A userset number is of 4 digits, max upto 9999 , then after it has to be start from one again
     */
@@ -527,14 +527,14 @@ class EftCreateCmd extends Command
     * Get number of Successful transmission sent on today to ABSA
     */
     private function getTransmissionCountOfToday(){
-        
+
         $dailysequence = TransmissionRecords::where(DB::raw("(DATE_FORMAT(created_at,'%Y-%m-%d'))"),date('Y-m-d'))
                                     ->where('combined_status','ACCEPTED')
                                     ->groupBy(DB::raw("(DATE_FORMAT(created_at,'%Y-%m-%d'))"))
                                     ->sum('sequence_number');
         $dailysequence=intval($dailysequence);
         if(isset($dailysequence)){
-            $count   = $dailysequence;  
+            $count   = $dailysequence;
         }else{
             $count = 0;
         }
@@ -545,31 +545,31 @@ class EftCreateCmd extends Command
     *  Create a tranmission header . there will be only one transmission header for every transmission file
     */
     private function generateTransmissionHeader(){
-        
+
         /*
         offset  name                                 value
-        1-3     Identifier                         000 (fixed) 
+        1-3     Identifier                         000 (fixed)
         4      Status                              T / L
         5-12   Transmission Date                   today's date (Ymd)
         13-17  electronic banking suit user code   07303
         18-47  electronic banking suit user name   PAYPORT CONSUTING PTY LTD(if length is less than 30 we will put blank space in the sting)
-        48-54  transmission number                 starting value will be 0000000 and will be incremented by 1 on each successfull transmission   
-        55-59  destination                          00000(fixed=value) 
+        48-54  transmission number                 starting value will be 0000000 and will be incremented by 1 on each successfull transmission
+        55-59  destination                          00000(fixed=value)
         60-178  spaces
         179-198  spaces
         199      spaces
         */
-        
+
         $transmissionDate             = Date("Ymd"); //set transmission date
         $electronicBankingSuitUserCode=$this->electronicBankingSuitUserCode;
         $electronicBankingSuitUserName=$this->electronicBankingSuitUserName;
-        
-        
+
+
         $username_length               = strlen($electronicBankingSuitUserName);
-            
-        $transmissionNumber            = sprintf('%07d', $this->transmissionFileNumber);  
-        
-        $transmissionheader = "000".$this->environment.$transmissionDate.$electronicBankingSuitUserCode.$electronicBankingSuitUserName.str_repeat(' ',30-$username_length).$transmissionNumber."00000".str_repeat(' ',119).str_repeat(' ',21)."\r"; 
+
+        $transmissionNumber            = sprintf('%07d', $this->transmissionFileNumber);
+
+        $transmissionheader = "000".$this->environment.$transmissionDate.$electronicBankingSuitUserCode.$electronicBankingSuitUserName.str_repeat(' ',30-$username_length).$transmissionNumber."00000".str_repeat(' ',119).str_repeat(' ',21)."\r";
 
         $this->outputContent.=$transmissionheader;
         return $transmissionheader;
@@ -587,9 +587,9 @@ class EftCreateCmd extends Command
         if(!isset($transmission) || is_null($transmission)){
             $transmissionNumber   = 1;  //if there is no transmission , then start with 1
         }else{
-            
+
             //increase the transmission number by one. It will be next tranmission number
-            $transmissionNumber= intval($transmission->transmission_number)+1; 
+            $transmissionNumber= intval($transmission->transmission_number)+1;
 
             //as tranmission number has to be seven digit only , upto max 9999999. after reaching max it should re-strat with 1
             $transmissionNumber=$transmissionNumber%10000000;
@@ -606,20 +606,20 @@ class EftCreateCmd extends Command
     private function fetchCollectionRecords(){
         $this->sameDayTransactions = $this->getRecords(["Same Day"]);
         $this->oneDayTransactions = $this->getRecords(["1 Day","2 Day"]);
-        
+
         $totalRecords=sizeof($this->sameDayTransactions)+sizeof($this->oneDayTransactions);
-        
+
         if($totalRecords<=0){
             die("No record to make transmission");
             exit();
         }
     }
-    
+
     private function getRecords($serviceType=["Same Day"]){
-        
+
         $paymentDate=Helper::getPaymentDate($serviceType,date('Y-m-d'));
-        
-        
+
+
         //get those transmission whose tranmission status is pending (0)
         $customerTransactions =  Collections::where('transmission_status',0)
                                     ->where('collection_status',1)
@@ -628,20 +628,20 @@ class EftCreateCmd extends Command
                                     ->orderBy('firm_id')
                                     ->orderBy('payment_date')
                                     ->get();
-                                    
+
         return $customerTransactions;
     }
 
-    
-    
-    
+
+
+
 
     /*
         Check for transmission , if there is any pending results
         if there is any pending result, you can not create EFT further
     */
     private function isTransmissionResultAwaited(){
-        $lastTranmission=TransmissionRecords::orderBy('id','desc')->first(); 
+        $lastTranmission=TransmissionRecords::orderBy('id','desc')->first();
 
         //check if reply of last transimission is received or not
         if($lastTranmission && is_null($lastTranmission->transmission_status)){

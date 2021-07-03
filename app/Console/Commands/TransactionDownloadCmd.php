@@ -40,19 +40,19 @@ class TransactionDownloadCmd extends Command
      *
      * @return mixed
      */
-    
+
     public function handle()
     {
-        
+
         //die("Stoped");
-        
+
         $remoreDir=Config('constants.remoteFileDownloadLocation');//"/transferzone/PayportSA/LDC_Outgoing";
         $localDir=public_path("files/collections/incoming");
         $sftp=Helper::getSftp();
         if($sftp){
             $sftp->chdir($remoreDir);
             $filesInDir=$sftp->nlist();
-           
+
             //loop through the files, got from remote ftp
             foreach($filesInDir as $key => $eachFile){
 
@@ -77,45 +77,45 @@ class TransactionDownloadCmd extends Command
            });
             die("not connected");
         }
-        
+
         $this->readdata();
-        
+
     }
 
     /*
     * Read files downloaded from ABSA server
     */
-    public function readdata() 
+    public function readdata()
     {
-        
-        
+
+
         $dir = scandir($this->dirName);
-        
+
         foreach($dir as $key => $data){
-            if($key>1){ 
+            if($key>1){
                 $batchsequence = false;
                 if(substr($data, 0, 8)==Config('constants.bankingSuitFolder').'R')
                 {
                     $this->readReplyFile($data);
                     //update   `collections` set transaction_status=1 where transmission_status=2 and transaction_status=2
-                    
+
                 }elseif(substr($data, 0, 8)==Config('constants.bankingSuitFolder').'O'){
                     $this->readOutputFile($data);
                 }
             }
-            
-        }    
+
+        }
     }
 
     function readReplyFile($fileName){
         $date = Date('Y-m-d-His');
         $fn         = fopen($this->dirName.$fileName,"r");
         $i          = 0;
-        
+
         $flag       = false;
         $contraflag = false;
-        
-        
+
+
         $file = public_path("files/collections/incoming/".$fileName);
         $numberofrows = count(file($file, FILE_SKIP_EMPTY_LINES));
 
@@ -126,19 +126,19 @@ class TransactionDownloadCmd extends Command
         $userSetStatus=null;
         $errGenerationNumber=null;
         $errSequenceNumber=null;
-        
+
         //tranmission whose status of still null , will be the last tranmission
         $transRecords=TransmissionRecords::whereNull('transmission_status')->orderBy('id','desc')->first();
         $lastTranmission=$transRecords;
 
-        while(!feof($fn))  
+        while(!feof($fn))
         {
             $i++;
             $result = fgets($fn);
-            
+
             $numfilesaccepted =0;
             //get transaction num
-            
+
             $identifierFiller = trim(substr($result, 7, 14)); //identifier of the record (ex:- Transmission, user set)
             $recordIdentifier = trim(substr($result, 0, 3));  //to identify type of record
             $headerIdentifier = trim(substr($result, 4, 3));  //To identify what type of message record is providing
@@ -148,7 +148,7 @@ class TransactionDownloadCmd extends Command
                 $rawTranDate=trim(substr($result, 4, 8));//in CCYYMMDD format
                 $transDate=substr($rawTranDate, 0, 4).'-'.substr($rawTranDate, 4, 2).'-'.substr($rawTranDate, 6, 2);
             }
-            
+
             if($identifierFiller=='TRANSMISSION'){
                 $transmisionStatus=substr($result,35, 8);
                 $transmissionNumber = trim(substr($result, 27, 7));
@@ -159,18 +159,18 @@ class TransactionDownloadCmd extends Command
                         $lastTranmission=$this->rejectFullTranmission($lastTranmission);
 
                         Mail::raw("Transmission failed.", function($message){
-                           $message->from('lokesh.j@cisinlabs.com');
-                           $message->to('lokesh.j@cisinlabs.com')->cc('dean@payportsa.co.za')->cc('operations@payportsa.co.za')->subject("A transmission failed");
+                           $message->from('operations@payportsa.co.za');
+                           $message->to('musaz01@gmail.com')->cc('dean@payportsa.co.za')->cc('operations@payportsa.co.za')->subject("A transmission failed");
                        });
                     }else{
                         $lastTranmission->transmission_status="ACCEPTED";
                         $lastTranmission->save();
                     }
                 }
-                
+
             }
 
-            //reason why tranmission is rejected 
+            //reason why tranmission is rejected
             if($recordIdentifier=="901" && $headerIdentifier=="000"){
                 //it means rejection of whole transmission
                 $this->logTranmissionFailure($lastTranmission,$result);
@@ -208,19 +208,19 @@ class TransactionDownloadCmd extends Command
             }
         }
 
-        
+
         $processedCollections = Collections::where('transmission_id',$lastTranmission->id)
         ->groupBy('batch_id')->get();
         //dd($dailysequence);
         foreach ($processedCollections as $key => $eachCollection) {
             Batch::where('id', $eachCollection->batch_id)->update(['batch_status' => 'processed']);
         }
-        
+
 
          // //Move file to different folder
         $processedFilePath='files'.DIRECTORY_SEPARATOR.'collections'.DIRECTORY_SEPARATOR.'processed'.DIRECTORY_SEPARATOR.$fileName;
         $moveFile=public_path($processedFilePath);
-        if (copy($file,$moveFile)) 
+        if (copy($file,$moveFile))
         {
             $lastTranmission->reply_file=$processedFilePath;
             $lastTranmission->save();
@@ -233,7 +233,7 @@ class TransactionDownloadCmd extends Command
         $i          = 0;
         $file = public_path("files/collections/incoming/".$fileName);
         $numberofrows = count(file($file, FILE_SKIP_EMPTY_LINES));
-        
+
         $outputFile=new OutputFile();
         $outputFile->file_type='collection';
         $outputFile->receiving_date=date('Y-m-d H:i:s');
@@ -243,7 +243,7 @@ class TransactionDownloadCmd extends Command
 
         $transactionCount=0;
         $transactionAmount=0;
-        while(!feof($fn))  
+        while(!feof($fn))
         {
             $i++;
             $result = fgets($fn);
@@ -258,7 +258,7 @@ class TransactionDownloadCmd extends Command
 
             }
 
-            
+
 
             if($recordIdentifier=="011"){
                 //transmission header record
@@ -277,10 +277,10 @@ class TransactionDownloadCmd extends Command
                 $rejectionCode=trim(substr($result, 83, 3)); //026
                 $rejectQualification=trim(substr($result, 86, 5)); //83002
 
-                $trxnErrorRecord=TransactionErrorCodes::where('error_code',intval($rejectionCode))->first(); 
+                $trxnErrorRecord=TransactionErrorCodes::where('error_code',intval($rejectionCode))->first();
 
                 //$transmissionIds=$this->getTranmissionIdsForDate($transmissionDate);
-                
+
                 // $collectionRecord=Collections::where('reffrence', $reffrenceStrg)
                 // ->where('sequence_number',intval($userSeqNumber))->first();
                 $collectionRecord=Collections::where('reffrence', $reffrenceStrg)
@@ -291,7 +291,7 @@ class TransactionDownloadCmd extends Command
                 ->where('collections.sequence_number',intval($userSeqNumber))
                 ->where('transmission_records.transmission_date', $transmissionDate)
                 ->first();
-                
+
                 if($collectionRecord){
                     $collectionRecord->tranx_error_code=$rejectionCode;
                     $collectionRecord->tranx_error_id=$trxnErrorRecord->id;
@@ -304,12 +304,12 @@ class TransactionDownloadCmd extends Command
                     }else{
                         Helper::logStatusChange('collection',$collectionRecord,'Transaction failed');
                     }
-                    
+
                     $collectionRecord->save();
-                    
+
                     $transactionCount++;
                     $transactionAmount+=$collectionRecord->amount;
-                    
+
                     $outputFileTrax=new OutputFileTransaction();
                     $outputFileTrax->output_file_id=$outputFile->id;
                     $outputFileTrax->target_transaction_id=$collectionRecord->id;
@@ -319,7 +319,7 @@ class TransactionDownloadCmd extends Command
                     $lastLedgerEntry=Ledgers::whereIn('transaction_type',Config('constants.lastLedgerTranxCond'))->where('firm_id',$collectionRecord->firm_id)->orderByRaw('entry_date DESC,id desc')->orderBy('entry_date','desc')->first();
                     $closingAmount=$collectionRecord->amount*(-1);
                     if($lastLedgerEntry){
-                        
+
                         $closingAmount=$lastLedgerEntry->closing_amount-$collectionRecord->amount;
                     }
 
@@ -334,15 +334,15 @@ class TransactionDownloadCmd extends Command
                     $ledgerEntry->entry_date =$transDate;
                     $ledgerEntry->save();
                 }
-                
+
             }
         }
 
-         
+
         //Move file to different folder
         $processedFilePath="files/collections/processed/".$fileName;
         $moveFile=public_path($processedFilePath);
-        if (copy($file,$moveFile)) 
+        if (copy($file,$moveFile))
         {
             $outputFile->transaction_count=$transactionCount;
             $outputFile->transaction_amount=$transactionAmount;
@@ -360,7 +360,7 @@ class TransactionDownloadCmd extends Command
         //update all the collections as rejected transmission and failed transaction
         //Collections::where('transmission_id', $lastTranmission->id)->update(['transmission_status' => 3,'transaction_status'=>2]);
 
-        $collectionRecords=Collections::where('transmission_id', $lastTranmission->id)->get(); 
+        $collectionRecords=Collections::where('transmission_id', $lastTranmission->id)->get();
         Helper::logStatusChanges('collection',$collectionRecords,"Transmission rejected");
 
         Collections::where('transmission_id', $lastTranmission->id)->update(['transmission_status' => 3]);
@@ -373,7 +373,7 @@ class TransactionDownloadCmd extends Command
         ->where(function($query) use ($generationNumber){
                 $query->where('user_set_number',intval($generationNumber))
                 ->orWhere('user_set_number', $generationNumber);
-        })->get(); 
+        })->get();
         Helper::logStatusChanges('collection',$collectionRecords,"Transmission rejected");
 
         //update all the collections as rejected transmission and failed transaction
@@ -403,7 +403,7 @@ class TransactionDownloadCmd extends Command
         $errSequenceNumber=trim(substr($transmissionStrng, 21, 6));
         //$errorCode=trim(substr($transmissionStrng, 28, 5));
 
-        
+
 
         if(intval($errSequenceNumber)>0){
             $collectionRecord=Collections::where('transmission_id', $lastTranmission->id)
@@ -418,11 +418,11 @@ class TransactionDownloadCmd extends Command
 
                 Helper::logStatusChange('collection',$collectionRecord,"Transmission rejected");
             }
-            
+
         }
     }
 
-    
+
 
     function updateLedgerForUserSet($localTransmissionId,$generationNumber){
         $eftRecords=Collections::where('transmission_id', $localTransmissionId)
@@ -462,7 +462,7 @@ class TransactionDownloadCmd extends Command
                     $ledgerRecord=new Ledgers();
                     //echo "test";
                 }
-                    
+
                 $ledgerRecord->firm_id =$batchStatement->firm_id;
                 $ledgerRecord->collection_id =$batchStatement->batch_id;
                 $ledgerRecord->transaction_type ='batch_collection';
@@ -476,12 +476,12 @@ class TransactionDownloadCmd extends Command
         }
     }
     function getTranmissionIdsForDate($transmissionDate){
-       $tranmissionOnDate=TransmissionRecords::where('transmission_date',$transmissionDate)->where('combined_status','ACCEPTED')->get(); 
+       $tranmissionOnDate=TransmissionRecords::where('transmission_date',$transmissionDate)->where('combined_status','ACCEPTED')->get();
 
         $transmissionIds=[0];
         foreach ($tranmissionOnDate as $key => $eachTransmission) {
             $transmissionIds[]=$eachTransmission->id;
-        } 
+        }
         return $transmissionIds;
     }
 
@@ -495,5 +495,5 @@ class TransactionDownloadCmd extends Command
                         ->orderBy('id','desc')->first();
         return $transRecords;
     }
-  
+
 }
