@@ -12,13 +12,13 @@
           <div class="card-header border-bottom">
             <h4 class="card-title">Add Customer For reccur collection</h4>
           </div>
-          
+
           <div class="card-body">
             <form class="form-sample" method="post" action="{{ isset($employee->id) && $employee->id!='' ? url('merchant/collection/reoccur/customer/'.encrypt($employee->id)) : url('merchant/collection/reoccur/customer/create') }}" autocomplete="off">
               @csrf
               <p class="card-description">Customer's Personal Information</p>
-              <div class="row">               
-                
+              <div class="row">
+
                 <div class="col-md-6">
                   <div class="form-group row {{$errors->first('first_name')?'has-error':''}}">
                     <label class="col-sm-3 col-form-label">First Name*</label>
@@ -34,11 +34,11 @@
                     <div class="col-sm-9">
                       <input type="text" class="form-control" placeholder="Last Name" name="last_name" value="{{old('last_name')}}">
                       <p class="error">{{$errors->first('last_name')}}</p>
-                      
+
                     </div>
                   </div>
                 </div>
-              
+
                 <div class="col-md-6">
                   <div class="form-group row {{$errors->first('email')?'has-error':''}}">
                     <label class="col-sm-3 col-form-label">Email</label>
@@ -120,7 +120,7 @@
               </div>
               <p class="card-description">Address</p>
               <div class="row">
-                
+
                 <div class="col-md-6">
                   <div class="form-group row {{$errors->first('address_one')?'has-error':''}}">
                     <label class="col-sm-3 col-form-label">Address Line 1</label>
@@ -204,9 +204,9 @@
                   </div>
                 </div>
 
-                
-                       
-                
+
+
+
               </div>
               <p class="card-description">Collection Details(For OnceOff)</p>
               <div class="row">
@@ -227,11 +227,11 @@
                           <p class="error">{{ $errors->first('once_off_amount')}}</p>
                         </div>
                       </div>
-                </div> 
+                </div>
               </div>
               <p class="card-description">Collection Details(For Recurring)</p>
-              <div class="row">  
-                 
+              <div class="row">
+
                 <div class="col-md-6">
                     <div class="form-group row {{ $errors->first('recurring_start_date')?'has-error':'' }}">
                       <label class="col-sm-3 col-form-label">Recurring Start Date**</label>
@@ -245,7 +245,7 @@
                     <div class="form-group row ">
                       <label class="col-sm-3 col-form-label">Action Day</label>
                       <div class="col-sm-9 input-group ">
-                        
+
                         <input type="text" readonly="readonly" class="form-control" placeholder="Action Day" name="recurring_action_day" value="{{old('recurring_action_day')}}" id="recurring_action_day"/>
                         <input type="hidden" name="next_action_day" value="{{old('next_action_day')}}" id="next_action_day">
                         <div class="input-group-prepend">
@@ -254,7 +254,7 @@
                       </div>
                     </div>
                 </div>
-                
+
                 <div class="col-md-6">
                     <div class="form-group row {{ $errors->first('recurring_amount')?'has-error':'' }}">
                       <label class="col-sm-3 col-form-label">Recurring Amount</label>
@@ -271,7 +271,7 @@
                       <select class="form-control recurringEntity" name="debit_frequency">
                         <option value="">Select</option>
                         @foreach(Config('constants.debitFrequency') as $key =>$debitFrequency)
-                          <option value="{{$debitFrequency}}" 
+                          <option value="{{$debitFrequency}}"
                           {{$debitFrequency==old('debit_frequency')?'selected':''}}>{{$debitFrequency}}</option>
                         @endforeach
                       </select>
@@ -284,7 +284,8 @@
                   <div class="form-group row {{ $errors->first("duration")?"has-error":""}}">
                     <label class="col-sm-3 col-form-label">Duration</label><div class="col-sm-9">
                     <input type="text" class="form-control recurringEntity" placeholder="Duration" name="duration" value="{{ old('duration')}}"><p class="error">{{ $errors->first("duration")}}</p></div>
-                    </div>
+                    <small id="durationHelp" class="form-text text-muted">Duration is required if Recurring Amount > 0.</small>
+                  </div>
                 </div>
               </div>
               <?php /* <p class="card-description">
@@ -294,16 +295,16 @@
                 <div class="col-md-12">
                   <div class="form-group row">
                     <label class="col-sm-3">Action Date can be? *</label>
-                  
+
                       <div class="col-sm-9">
                         <div class="custom-control custom-radio radio custom-control-inline">
-                          
+
                           <input type="radio" class="custom-control-input" id="action_date_choice_pre" name="action_date_choice" value="pre" {{ (old('action_date_choice')==='pre') ? 'checked': ''}}>
                           <label class="custom-control-label" for="action_date_choice_pre">Pre Dated</label>
                         </div>
-                      
+
                         <div class="custom-control custom-radio radio custom-control-inline">
-                          
+
                           <input type="radio" class="custom-control-input" id="action_date_choice_post" name="action_date_choice" value="post" {{ (old('action_date_choice')=='post') ? 'checked': ''}}>
                           <label class="custom-control-label" for="action_date_choice_post">Post Dated</label>
                         </div>
@@ -333,17 +334,17 @@ var bank_id = '{{ old("bank_id")}}';
 
 $(document).ready(function(){
     getCollectionDate('2 Day',true,'reoccur');
-    
+
   if(bank_id!=''){
     getBranchCode(bank_id);
   }
-  
+
   $('#bank_id').on('change',function(){
      getBranchCode($(this).val());
   });
-  
+
   $("#recurring_start_date").on('change',function(){
-    
+
     var newDate=new Date(this.value);
     newDate.setHours(0, 0, 0);   // Set hours, minutes and seconds
     var isWorkingDay=false;
@@ -353,10 +354,10 @@ $(document).ready(function(){
       if(isWorkingDay==false){
         newDate.setDate(newDate.getDate() + 1)
       }
-      
+
     }
-    while (isWorkingDay==false); 
-    
+    while (isWorkingDay==false);
+
     var month = newDate.getUTCMonth() + 1; //months from 1-12
     var day = newDate.getDate();
     var year = newDate.getUTCFullYear();
@@ -368,8 +369,8 @@ $(document).ready(function(){
     $(".next-action-date-txt").text("Next action Date "+nextActionDate);
   });
 
-});  
+});
 
-  
+
 </script>
 @endsection
