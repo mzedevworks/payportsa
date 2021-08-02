@@ -280,13 +280,16 @@
                   </div>
                 </div>
 
-                <div class="col-md-6" id="duration">
-                  <div class="form-group row {{ $errors->first("duration")?"has-error":""}}">
-                    <label class="col-sm-3 col-form-label">Duration</label><div class="col-sm-9">
-                    <input type="text" class="form-control recurringEntity" placeholder="Duration" name="duration" value="{{ old('duration')}}"><p class="error">{{ $errors->first("duration")}}</p></div>
-                    <small id="durationHelp" class="form-text text-muted">Duration is required if Recurring Amount > 0.</small>
+                  <div class="col-md-6" id="duration">
+                      <div class="form-group row {{ $errors->first("duration")?"has-error":""}}">
+                          <label class="col-sm-3 col-form-label">Duration</label><div class="col-sm-9">
+                              <div>
+                                  <input type="text" class="form-control recurringEntity" placeholder="Duration" name="duration" value="{{ old('duration')}}">
+                                  <p class="error">{{ $errors->first("duration")}}</p></div>
+                              <small id="durationHelp" class="form-text text-muted error">Duration is required if Recurring Amount > 0.</small>
+                          </div>
+                      </div>
                   </div>
-                </div>
               </div>
               <?php /* <p class="card-description">
                 If Collection date falls on Holiday/Weekend, Action date needs to be modified either Pre or post. Please mark your suitable option.
