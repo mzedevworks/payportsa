@@ -215,7 +215,8 @@
                         <label class="col-sm-3 col-form-label">Collection Date**</label>
                         <div class="col-sm-9">
                           <input type="text" class="form-control collection_date" placeholder="Collection Date" name="collection_date" value="{{ old('collection_date') }}" id="collection_date">
-                          <p class="error">{{ $errors->first('collection_date')}}</p>
+                            <small id="once_off_amount_help" class="form-text text-muted">Required if Recurring Start Date is empty or Once Off Amount is greater than zero.</small>
+                            <p class="error">{{ $errors->first('collection_date')}}</p>
                         </div>
                       </div>
                 </div>
@@ -224,7 +225,8 @@
                         <label class="col-sm-3 col-form-label">OnceOff Amount**</label>
                         <div class="col-sm-9">
                           <input type="text" class="form-control" placeholder="OnceOff Amount" name="once_off_amount" value="{{ old('once_off_amount') }}">
-                          <p class="error">{{ $errors->first('once_off_amount')}}</p>
+                            <small id="once_off_amount_help" class="form-text text-muted">Required if Recurring start date and Recurring Amount is empty.</small>
+                            <p class="error">{{ $errors->first('once_off_amount')}}</p>
                         </div>
                       </div>
                 </div>
